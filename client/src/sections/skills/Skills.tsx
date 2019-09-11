@@ -5,7 +5,7 @@ import SectionTitle from '../../components/sectionTitle/SectionTitle'
 const Skills = () => {
     return (
         <div>
-            <SectionTitle />
+            <SectionTitle title={"Skills"} />
         </div>
     )
 }
