@@ -23,7 +23,7 @@ const skills: Props[] = [{
 
 const Skills = () => {
     return (
-        <div>
+        <div className='skills-section'>
             <SectionTitle title={'Skills'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
             <div className="responsive-grid">{skills.map((skill, index) => <Skill icon={skill.icon} title={skill.title} text={skill.text} key={index} />)}</div>
         </div>

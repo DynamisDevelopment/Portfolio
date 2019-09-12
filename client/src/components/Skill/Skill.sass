@@ -6,7 +6,6 @@
     flex-direction: column 
     justify-content: space-between
     max-width: 300px
-    height: 235px
     padding: 20px
     .icon-bg
         // Layout
@@ -16,6 +15,7 @@
         height: 60px
         width: 60px
         border-radius: 50%
+        margin-bottom: 5px
 
         // Misc Styling
         background-color: grey
@@ -25,12 +25,18 @@
             width: 40px
     h1 
         // Typography
+        font-weight: 600
         @extend .text-xl
+    .text 
+        // Typography
+        color: rgb(50, 50, 50)
+        @extend .sm-text-base, .md-text-lg, .lg-text-xl
     .shortLine 
         // Layout
         width: 100px
         height: 3px
         border-radius: 15%
+        margin: 10px 0 10px 0
 
         // Misc Styling
         background-color: grey

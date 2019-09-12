@@ -2,13 +2,14 @@
 
 body 
     overflow-x: hidden 
-    
 .responsive-grid
     // Layout
     display: flex 
-    justify-content: space-around
+    justify-content: space-between
     align-items: center
     flex-wrap: wrap
+    margin: 30px 0 30px 0
+    padding: 0 10vw 0 10vw
     @extend .sm-flex-col, .md-flex-row
     @extend .lg-mx-32
 
@@ -17,9 +18,6 @@ body
     width: 100%
     max-width: 400px
     padding: 10px
-    
-    // Misc Styling
-    cursor: pointer
     img 
         // Layout
         width: 100%
