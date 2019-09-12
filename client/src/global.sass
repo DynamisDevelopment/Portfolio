@@ -1,6 +1,27 @@
 @import '../node_modules/headwindcss/headwind.scss'
+
+body 
+    overflow-x: hidden 
     
 .responsive-grid
+    // Layout
     display: flex 
-    flex-direction: column 
-    justify-content: space-between
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    @extend .sm-flex-col, .md-flex-row
+    @extend .lg-mx-32
+
+.card 
+    // Layout
+    width: 100%
+    max-width: 400px
+    padding: 10px
+    
+    // Misc Styling
+    cursor: pointer
+    img 
+        // Layout
+        width: 100%
+        height: 200px
+        border-radius: 5%

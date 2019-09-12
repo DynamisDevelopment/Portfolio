@@ -35,8 +35,10 @@ const projects: Props[] = [{
 const Portfolio = () => {
     return (
         <div>
-            <SectionTitle title={"Portfolio"} />
-            {projects.map((project, index) => <Project image={project.image} name={project.name} desc={project.desc} link={project.link} key={index} />)}
+            <SectionTitle title={'Portfolio'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+            <div className="responsive-grid">
+                {projects.map((project, index) => <Project image={project.image} name={project.name} desc={project.desc} link={project.link} key={index} />)}
+            </div>
         </div>
     )
 }

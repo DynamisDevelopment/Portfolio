@@ -5,7 +5,7 @@ import SectionTitle from '../../components/sectionTitle/SectionTitle'
 const Contact = () => {
     return (
         <div>
-            <SectionTitle title={"Contact"} />
+            <SectionTitle title={"Contact"} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
         </div>
     )
 }
