@@ -1,2 +1,11 @@
 @import '../../global.sass'
 
+.skills 
+    // Layout
+    display: flex 
+    justify-content: center
+    align-items: center
+    margin-top: 60px
+    @extend .sm-flex-col, .md-flex-row
+    @extend .lg-mx-32
+    align-items: flex-start !important //Override centering from responsive-grid to keep everything level

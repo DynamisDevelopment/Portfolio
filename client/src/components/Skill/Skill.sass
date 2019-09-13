@@ -3,10 +3,12 @@
 .skill
     // Layout
     display: flex 
-    flex-direction: column 
     justify-content: space-between
-    max-width: 300px
+    flex-wrap: wrap
+    max-width: 350px
     padding: 20px
+    @extend .sm-flex-col, .md-flex-row
+    @extend .lg-mx-16
     .icon-bg
         // Layout
         display: flex 
@@ -18,7 +20,7 @@
         margin-bottom: 5px
 
         // Misc Styling
-        background-color: grey
+        @extend .gradient-bg
         .icon 
             // Layout
             height: 40px
@@ -39,4 +41,4 @@
         margin: 10px 0 10px 0
 
         // Misc Styling
-        background-color: grey
+        background-color: rgba(120, 48, 252, .8)

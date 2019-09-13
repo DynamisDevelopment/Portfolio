@@ -13,19 +13,19 @@ const skills: Props[] = [{
     text: 'Quick, clean, and maintanable solutions using the latest technology.'
 }, {
     icon: '../assets/icons/development.svg',
-    title: 'Web Design',
+    title: 'Mobile Development',
     text: 'We design efficient and engaging web experiences with the focus on user and business needs.'
 }, {
     icon: '../assets/icons/development.svg',
-    title: 'Web Development',
+    title: 'Testing and Maintenance',
     text: 'Quick, clean, and maintanable solutions using the latest technology.'
 }]
 
 const Skills = () => {
     return (
-        <div className='skills-section'>
+        <div className='bg center'>
             <SectionTitle title={'Skills'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
-            <div className="responsive-grid">{skills.map((skill, index) => <Skill icon={skill.icon} title={skill.title} text={skill.text} key={index} />)}</div>
+            <div className="skills">{skills.map((skill, index) => <Skill icon={skill.icon} title={skill.title} text={skill.text} key={index} />)}</div>
         </div>
     )
 }

@@ -29,12 +29,22 @@ const projects: Props[] = [{
     name: '',
     desc: '',
     link: ''
-}]
+}, {
+    image: '../assets/projects/project1.jpg',
+    name: '',
+    desc: '',
+    link: ''
+}, {
+    image: '../assets/projects/project1.jpg',
+    name: '',
+    desc: '',
+    link: ''
+},]
 
 
 const Portfolio = () => {
     return (
-        <div>
+        <div className='center'>
             <SectionTitle title={'Portfolio'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
             <div className="responsive-grid">
                 {projects.map((project, index) => <Project image={project.image} name={project.name} desc={project.desc} link={project.link} key={index} />)}

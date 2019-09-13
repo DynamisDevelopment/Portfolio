@@ -30,9 +30,9 @@ const tools: Props[] = [{
 
 const Tools = () => {
     return (
-        <div>
-            <SectionTitle title={'Tools'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
-            <div className="responsive-grid tools">{tools.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
+        <div className='bg'>
+            <SectionTitle title={'Tech'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+            <div className="tools">{tools.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
         </div>
     )
 }
