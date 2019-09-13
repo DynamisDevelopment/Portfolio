@@ -12,20 +12,20 @@ const tools: Props[] = [{
     image: '../assets/icons/react-logo.svg',
     name: 'React'
 }, {
-    image: '../assets/icons/react-logo.svg',
-    name: 'React'
+    image: '../assets/icons/gatsby-logo.svg',
+    name: 'Gatsby'
 }, {
-    image: '../assets/icons/react-logo.svg',
-    name: 'React'
+    image: '../assets/icons/flutter-logo.svg',
+    name: 'Flutter'
 }, {
-    image: '../assets/icons/react-logo.svg',
-    name: 'React'
+    image: '../assets/icons/wordpress-logo.svg',
+    name: 'Wordpress'
 }, {
-    image: '../assets/icons/react-logo.svg',
-    name: 'React'
+    image: '../assets/icons/graphql-logo.svg',
+    name: 'GraphQL'
 }, {
-    image: '../assets/icons/react-logo.svg',
-    name: 'React'
+    image: '../assets/icons/woocommerce-logo.svg',
+    name: 'Woocommerce'
 },]
 
 const Tools = () => {
