@@ -31,36 +31,26 @@
             // Layout
             height: 100%
             margin-bottom: 15px
-        button 
-            // Layout
-            width: 300px
-            height: 50px
-
-            // Typography
-            text-transform: uppercase
-            color: rgba(120, 48, 252, 1)
-
-            // Misc Styling
-            border: 2px solid rgba(120, 48, 252, .8)
-            border-radius: 50px
     .social 
         // Layout
         display: flex 
         justify-content: space-around
         align-items: center 
         width: 70vw
+        max-width: 500px
         margin: 15px 0 15px 0
         .circle 
             // Layout
             display: flex 
             justify-content: space-around
             align-items: center 
-            height: 40px
-            width: 40px
+            height: 50px
+            width: 50px
             border-radius: 50%
 
             // Misc Styling
-            @extend .gradient-bg
+            box-shadow: $shadow
+            @extend .gradient-bg,
         img 
             // Layout
             height: 30px

@@ -6,7 +6,8 @@
     display: flex 
     flex-direction: column 
     justify-content: center
-    align-items: center
+    // align-items: center
+    @extend .sm-items-center, .md-items-start
 
     // Typography
     text-align: center  
@@ -14,17 +15,27 @@
 
     // Misc Styling
     background-color: grey
-    .title 
+    .content 
+        // Layout
+        @extend .center
+        @extend .md-ml-12, .lg-ml-32
+        .title 
+            // Layout
+            @extend .sm-max-w-xs, .md-max-w-full
+        
+            // Typography
+            font-weight: 600
+            @extend .text-5xl
+        .subtitle 
+            // Layout
+            width: 90%
+            @extend .sm-w-auto, .md-max-w-md
+
+            // Typography
+            @extend .text-lg
+
+@media screen and (max-width: 650px)
+    .content .title 
         // Layout
         width: 50%
-
-        // Typography
-        font-weight: 600
-        @extend .text-5xl
-    .subtitle 
-        // Layout
-        width: 90%
-        
-        // Typography
-        @extend .text-lg
 
