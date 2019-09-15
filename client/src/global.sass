@@ -4,9 +4,11 @@ $shadow: 0 5px 10px rgba(120, 48, 252, .2)
 
 body 
     overflow-x: hidden 
-
     // Typography
     @extend .font-sans
+    
+::-webkit-scrollbar 
+    display: none
 
 .center 
     // Layout
@@ -31,10 +33,6 @@ body
         width: 100%
         min-width: 320px
         border-radius: 5%
-
-.bg
-    // Misc Styling
-    background-color: rgba(120, 48, 252, .11)
 
 .gradient-bg 
     // Misc Styling
