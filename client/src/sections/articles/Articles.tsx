@@ -24,7 +24,7 @@ const Articles = () => {
                         link={articles[i].link} />
                 </animated.div>)}
             </div>
-            <a href="https://alligator.io/author/joshua-hall"><button className='btn'>See All</button></a>
+            <a href="https://alligator.io/author/joshua-hall" target="_blanck"><button className='btn'>See All</button></a>
         </div>
     )
 }

@@ -15,7 +15,7 @@ const Project = (props: Props) => {
             onMouseLeave={() => set({ xys: [0, 0, 1] })}
             // @ts-ignore
             style={{ transform: move.xys.interpolate(trans) }}>
-            <a href={props.link}><img src={props.image} alt={props.name} /></a>
+            <a href={props.link} target="_blanck"><img src={props.image} alt={props.name} /></a>
         </animated.div >
     )
 }

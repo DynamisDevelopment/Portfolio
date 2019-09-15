@@ -24,7 +24,7 @@ const skills: Props[] = [{
 const Skills = () => {
     return (
         <div className='bg center'>
-            <SectionTitle title={'Skills'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+            <SectionTitle title={'Services'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
             <div className="skills">{skills.map((skill, index) => <Skill icon={skill.icon} title={skill.title} text={skill.text} key={index} />)}</div>
         </div>
     )
