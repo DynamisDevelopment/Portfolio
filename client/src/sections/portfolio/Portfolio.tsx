@@ -1,60 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Portfolio.sass'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import Project from '../../components/Project/Project'
-
-export interface Props {
-    image: string,
-    name: string
-    desc: string,
-    link: string,
-    id: number
-}
-const projects: Props[] = [{
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 1
-}, {
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 2
-}, {
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 3
-}, {
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 4
-}, {
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 5
-}, {
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 6
-},]
-
+import { projects } from './data'
+import { useTrail, animated, config } from 'react-spring'
+import { Waypoint } from 'react-waypoint'
 
 const Portfolio = () => {
+    const [show, toggle] = useState(false)
+    const reveal = useTrail(projects.length, { to: { opacity: show ? 1 : 0 }, config: config.slow })
     return (
         <div className='center'>
             <SectionTitle title={'Portfolio'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
             <div className="responsive-grid">
-                {projects.map((project, index) => <Project image={project.image} name={project.name} desc={project.desc} link={project.link} id={project.id} key={index} />)}
+                {reveal.map((animation, i) => <animated.div style={animation} key={i}>
+                    <Waypoint onEnter={() => { if (!show) toggle(true) }} bottomOffset='30%' />
+                    <Project
+                        image={projects[i].image}
+                        name={projects[i].name}
+                        desc={projects[i].desc}
+                        link={projects[i].link}
+                        id={projects[i].id} />
+                </animated.div>)}
             </div>
         </div>
     )

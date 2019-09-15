@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './global.sass'
+import { Waypoint } from 'react-waypoint'
 
 // * Components 
 import Navbar from './components/Navbar/Navbar'
@@ -15,10 +16,14 @@ import About from './sections/about/About'
 import Contact from './sections/contact/Contact'
 
 const HomePage = () => {
+    // @ts-ignore
+    const [show, toggle] = useState(false)
     return (
         <div>
             <Jumbotron />
-            <Navbar />
+            {/* // @ts-ignore */}
+            <Navbar show={show} />
+            <Waypoint onEnter={() => toggle(!show)} bottomOffset='80%' />
             <Skills />
             <Tools />
             <Portfolio />

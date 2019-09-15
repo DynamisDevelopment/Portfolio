@@ -1,67 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Articles.sass'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import Article from '../../components/Article/Article'
-
-export interface Props {
-    thumb: string,
-    title: string,
-    desc: string,
-    link: string
-}
-
-const articles: Props[] = [{
-    thumb: '../assets/articles/mutations.jpg',
-    title: 'Mutations and Subscriptions in GraphQL',
-    desc: 'Learn how to set up an advanced GraphQL APIs with Mutations and Subscriptions using the graphql-yoga Node.js library.',
-    link: 'https://alligator.io/graphql/mutations-subscriptions/'
-}, {
-    thumb: '../assets/articles/tailwind.jpg',
-    title: 'Introduction to Tailwind CSS',
-    desc: 'Explore Tailwind CSS, a popular utility-based CSS library that\'s easy to learn, customizable and responsive.',
-    link: 'https://alligator.io/css/tailwind-css/'
-}, {
-    thumb: '../assets/articles/react-spring.jpg',
-    title: 'Intro to Animations in React Using React Spring',
-    desc: 'Learn how to create dynamic physics-based animations in your React apps using the react-spring spring-physics animation library.',
-    link: 'https://alligator.io/react/intro-to-react-spring/'
-}, {
-    thumb: '../assets/articles/electron-part1.jpg',
-    title: 'Intro to Electron.js - Part 1: Setup',
-    desc: 'Get started using Electron.js to create your own native desktop applications.',
-    link: 'https://alligator.io/electron/intro-to-electron-setup/'
-}, {
-    thumb: '../assets/articles/electron-part2.jpg',
-    title: 'Intro to Electron.js - Part 2: Todo App',
-    desc: 'In this post we\'ll be creating a basic todo list app desktop app for Windows, Mac or Linux using Electron.js.',
-    link: 'https://alligator.io/electron/intro-to-electron-todo-app/'
-}, {
-    thumb: '../assets/articles/advanced-spring.jpg',
-    title: 'Creating Complex Animations in React Using react-spring',
-    desc: 'Here\'s a tutorial where I use react-spring and the help of the useSprings, useTrail and useChain hooks to create complex animations in React.',
-    link: 'https://alligator.io/react/advanced-react-spring/'
-}, {
-    thumb: '../assets/articles/flutter-layout.jpg',
-    title: 'Creating a Basic Layout in Flutter',
-    desc: 'In this post we\'ll briefly look at how to create a basic Flutter app layout in Dart. A great post if you\'re just getting started with Flutter.',
-    link: 'https://alligator.io/flutter/basic-layout/'
-}, {
-    thumb: '../assets/articles/schemas.jpg',
-    title: 'Schemas and Resolvers in GraphQL',
-    desc: 'Learn how to set up a basic GraphQL API with schemas and resolvers using graphql-yoga and nodemon.',
-    link: 'https://alligator.io/graphql/schemas-resolvers-graphql/'
-}, {
-    thumb: '../assets/articles/mongoose.jpg',
-    title: 'CRUD Operations with Mongoose and MongoDB Atlas',
-    desc: 'Learn How to Setup a Basic REST Api with Mongoose and the MongoDB Atlas Database.',
-    link: 'https://alligator.io/nodejs/crud-operations-mongoose-mongodb-atlas/'
-},]
+import { articles } from './data'
+import { useTrail, animated, config } from 'react-spring'
+import { Waypoint } from 'react-waypoint'
 
 const Articles = () => {
+    const [show, toggle] = useState(false)
+    const reveal = useTrail(articles.length, { to: { opacity: show ? 1 : 0 }, config: config.slow })
+
     return (
         <div className='bg center'>
             <SectionTitle title={"Articles"} subtitle={'I am currently a technical writer for Alligator.io'} />
-            <div className="responsive-grid">{articles.map((article, index) => <Article thumb={article.thumb} title={article.title} desc={article.desc} link={article.link} key={index} />)}</div>
+
+            <div className="responsive-grid">
+                {reveal.map((animation, i) => <animated.div style={animation} key={i}>
+                    <Waypoint onEnter={() => { if (!show) toggle(true) }} bottomOffset='30%' />
+                    <Article
+                        thumb={articles[i].thumb}
+                        title={articles[i].title}
+                        desc={articles[i].desc}
+                        link={articles[i].link} />
+                </animated.div>)}
+            </div>
             <a href="https://alligator.io/author/joshua-hall"><button className='btn'>See All</button></a>
         </div>
     )

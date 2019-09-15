@@ -5,6 +5,13 @@
     display: flex 
     flex-direction: column 
     align-items: center
+    .rain 
+        // Layout
+        position: absolute
+        width: 100vw
+        height: 90vh
+        max-height: 750px
+        z-index: 1
     .contact-form 
         // Layout
         display: flex 
@@ -12,6 +19,7 @@
         align-items: center
         height: 80vh
         max-height: 500px
+        z-index: 2
         input, textarea 
             // Layout
             width: 90vw
@@ -40,7 +48,8 @@
         align-items: center 
         width: 70vw
         max-width: 500px
-        margin: 15px 0 15px 0
+        margin: 15px 0 0 0
+        z-index: 2
         .circle 
             // Layout
             display: flex 

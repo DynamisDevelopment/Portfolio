@@ -4,11 +4,15 @@
     display: flex 
     align-items: center
     width: 100vw
-    height: 100px
+    height: 80px
     padding: 0 15px 0 15px
-    position: absolute 
+    position: fixed
     top: 0
+    z-index: 10
     @extend .sm-justify-between, .md-justify-around
+
+    // Misc Styling
+    @extend .shadow-2xl
     .profile-pic 
         // Layout
         height: 65px
@@ -28,6 +32,5 @@
         justify-content: space-around 
 
         // Typography
-        color: #fff
         @extend .text-xl
         @extend .sm-hidden, .md-flex

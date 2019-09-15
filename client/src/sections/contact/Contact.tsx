@@ -1,12 +1,14 @@
 import React from 'react'
 import './Contact.sass'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
+// import Rain from './Rain'
 
 const Contact = () => {
     const getYear = (): number => new Date().getFullYear()
     return (
-        <div className='contact bg'>
+        <div className='contact'>
             <SectionTitle title={"Contact"} subtitle={'Got something interesting?'} />
+            {/* <Rain /> */}
             <form className='contact-form'>
                 <input type="text" placeholder="Name" />
                 <input type="text" placeholder="Email" />
