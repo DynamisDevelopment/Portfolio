@@ -5,11 +5,13 @@
     "main": "index.js",
     "scripts": {
         "server": "nodemon server/server.js",
-        "start": "npm start --prefix client",
-        "client-intall": "npm install --prefix client"
+        "client": "npm start --prefix client",
+        "start": "node server/server.js",
+        "client-intall": "npm install --prefix client",
+        "heroku-postbuild": "cd client && npm build && npm start"
     },
     "keywords": [],
-    "author": "",
+    "author": "Joshua Hall",
     "license": "ISC",
     "dependencies": {
         "@types/react": "^16.9.2",
