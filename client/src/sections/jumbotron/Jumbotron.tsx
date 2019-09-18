@@ -7,7 +7,7 @@ const Jumbotron = () => {
             <div className="jumbotron-bg">
                 <div className="content">
                     <div className="title">Joshua Hall</div>
-                    <div className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, consequuntur deserunt odio quas dolore aliquid omnis a mollitia consequatur obcaecati amet.</div>
+                    <div className="subtitle">Just another US based, self-taught, full-stack web and app developer trying not to starve to death ¯\_༼ •́ ͜ʖ •̀ ༽_/¯.</div>
                 </div>
             </div>
         </div>

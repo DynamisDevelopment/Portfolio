@@ -1,46 +1,30 @@
-import React from 'react'
-
 export interface Props {
     image: string,
     name: string
     desc: string,
     link: string,
+    complete: boolean,
     id: number
 }
 export const projects: Props[] = [{
-    image: '../assets/projects/project1.jpg',
+    image: '../assets/projects/bauwerk.jpg',
     name: '',
     desc: '',
     link: '',
+    complete: true,
     id: 1
 }, {
-    image: '../assets/projects/project1.jpg',
+    image: '../assets/projects/tajam.jpg',
     name: '',
     desc: '',
     link: '',
+    complete: true,
     id: 2
 }, {
-    image: '../assets/projects/project1.jpg',
+    image: '../assets/projects/lexica.jpg',
     name: '',
     desc: '',
     link: '',
-    id: 3
-}, {
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 4
-}, {
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 5
-}, {
-    image: '../assets/projects/project1.jpg',
-    name: '',
-    desc: '',
-    link: '',
-    id: 6
-},]
+    complete: false,
+    id: 2
+}]

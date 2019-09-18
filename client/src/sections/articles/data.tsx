@@ -1,5 +1,3 @@
-import React from 'react'
-
 export interface Props {
     thumb: string,
     title: string,
@@ -52,4 +50,19 @@ export const articles: Props[] = [{
     title: 'CRUD Operations with Mongoose and MongoDB Atlas',
     desc: 'Learn How to Setup a Basic REST Api with Mongoose and the MongoDB Atlas Database.',
     link: 'https://alligator.io/nodejs/crud-operations-mongoose-mongodb-atlas/'
+}, {
+    thumb: '../assets/articles/socketio.jpg',
+    title: 'Introduction to Socket.IO: Building a Simple Chat App',
+    desc: 'In this post you\'ll learn the fundamentals of the Socket.IO realtime Node.js application framework by building a chat web app.',
+    link: 'https://alligator.io/nodejs/intro-to-socketio/'
+}, {
+    thumb: '../assets/articles/pug.jpg',
+    title: 'An Introduction to the Pug Template Engine for Writing HTML',
+    desc: 'Explore the HTML equivalent of what Sass is to CSS with Pug: a clean and simple alternative template engine to write HTML.',
+    link: 'https://alligator.io/html/exploring-pug-to-write-html/'
+}, {
+    thumb: '../assets/articles/particles.jpg',
+    title: 'Create Awesome Background Effects with Particles.js',
+    desc: 'Here\'s how to create stunning, interactive, and customizable particles effects using Particles.js, an incredibly easy to master library.',
+    link: 'https://alligator.io/js/background-effects-particlesjs/'
 },]

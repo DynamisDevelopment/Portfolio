@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Navbar.sass'
 import { animated, useTrail, useSpring, config } from 'react-spring'
 

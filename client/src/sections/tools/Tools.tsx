@@ -31,7 +31,7 @@ const tools: Props[] = [{
 const Tools = () => {
     return (
         <div className='bg'>
-            <SectionTitle title={'Tech'} subtitle={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+            <SectionTitle title={'Tech'} subtitle={'I can pretty much figure out anything, but these are what I\'m the most confident with.'} />
             <div className="tools">{tools.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
         </div>
     )

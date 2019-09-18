@@ -16,6 +16,7 @@ const Project = (props: Props) => {
             // @ts-ignore
             style={{ transform: move.xys.interpolate(trans) }}>
             <a href={props.link} target="_blanck"><img src={props.image} alt={props.name} /></a>
+            {!props.complete && <p className='not-complete'>-- Work in Progress --</p>}
         </animated.div >
     )
 }
