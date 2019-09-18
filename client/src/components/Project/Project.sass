@@ -6,12 +6,58 @@
     @extend .card, .center
 
     // Misc Styling
-    img 
+    .thumbnail, .details 
         // Layout
         height: 250px
 
         // Misc Styling
         @extend .shadow-xl
+    .details 
+        // Layout
+        display: flex 
+        flex-direction: column 
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        min-width: 320px
+        height: 275px
+        padding: 12%
+        z-index: 2
+
+        // Typography
+        color: #fff
+        text-align: center
+        @extend .text-xl
+    .more-links 
+        // Layout
+        display: flex
+        align-items: center 
+        justify-content: space-between
+        .visit-btn
+            // Layout
+            margin: 15px 15px 0 0
+            padding: 5px 15px 5px 15px
+            height: 50px
+            border-radius: 50px
+
+            // Typography
+            color: rgba(120, 48, 252, 1)
+
+            // Misc Styling
+            border: 2px solid rgba(120, 48, 252, .8)
+            &:hover 
+                color: #fff
+                @extend .gradient-bg
+        .github-link
+            // Layout
+            height: 45px 
+            width: 45px 
+            margin-top: 10px
+            @extend .circle
+            .git-link
+                // Layout
+                width: 30px 
+                height: 30px 
     .not-complete 
         // Layout
         margin-top: 10px

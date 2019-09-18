@@ -20,6 +20,7 @@ const Portfolio = () => {
                         name={projects[i].name}
                         desc={projects[i].desc}
                         link={projects[i].link}
+                        git={projects[i].link}
                         complete={projects[i].complete}
                         id={projects[i].id} />
                 </animated.div>)}
