@@ -10,7 +10,7 @@ const Portfolio = () => {
     const [show, toggle] = useState(false)
     const reveal = useTrail(projects.length, { to: { opacity: show ? 1 : 0 }, config: config.slow })
     return (
-        <div className='center'>
+        <div className='center' id="Portfolio">
             <SectionTitle title={'Portfolio'} subtitle={'Work I\'ve done in the past and some projects I\'m currently working on.'} />
             <div className="responsive-grid">
                 {reveal.map((animation, i) => <animated.div style={animation} key={i}>

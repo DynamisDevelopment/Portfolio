@@ -11,7 +11,7 @@ const Articles = () => {
     const reveal = useTrail(articles.length, { to: { opacity: show ? 1 : 0 }, config: config.slow })
 
     return (
-        <div className='bg center'>
+        <div className='bg center' id="Articles">
             <SectionTitle title={"Articles"} subtitle={'I am currently a technical writer for Alligator.io'} />
 
             <div className="responsive-grid">

@@ -6,7 +6,7 @@ import SectionTitle from '../../components/sectionTitle/SectionTitle'
 const Contact = () => {
     const getYear = (): number => new Date().getFullYear()
     return (
-        <div className='contact'>
+        <div className='contact' id="Contact">
             <SectionTitle title={"Contact"} subtitle={'Got something interesting?'} />
             {/* <Rain /> */}
             <form className='contact-form'>

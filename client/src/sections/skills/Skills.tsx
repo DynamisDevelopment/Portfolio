@@ -14,7 +14,7 @@ const skills: Props[] = [{
 }, {
     icon: '../assets/icons/development.svg',
     title: 'Mobile Development',
-    text: 'I use Flutter and React Native to create dynamic and scalable apps for both IOS and Android.'
+    text: 'I use Flutter and React Native to create dynamic and scalable apps for Android.'
 }, {
     icon: '../assets/icons/development.svg',
     title: 'Testing and Maintenance',
@@ -23,7 +23,7 @@ const skills: Props[] = [{
 
 const Skills = () => {
     return (
-        <div className='bg center'>
+        <div className='bg center' id="Services">
             <SectionTitle title={'Services'} subtitle={'These are just a few things that I can provide, but I\'m always open to anything interesting.'} />
             <div className="skills">{skills.map((skill, index) => <Skill icon={skill.icon} title={skill.title} text={skill.text} key={index} />)}</div>
         </div>
