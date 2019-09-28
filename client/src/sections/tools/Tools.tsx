@@ -18,14 +18,14 @@ const tools: Props[] = [{
     image: '../assets/icons/flutter-logo.svg',
     name: 'Flutter'
 }, {
-    image: '../assets/icons/wordpress-logo.svg',
-    name: 'Wordpress'
+    image: '../assets/icons/mongodb.png',
+    name: 'MongoDB'
 }, {
     image: '../assets/icons/graphql-logo.svg',
     name: 'GraphQL'
 }, {
-    image: '../assets/icons/woocommerce-logo.svg',
-    name: 'Woocommerce'
+    image: '../assets/icons/electron.png',
+    name: 'Electron'
 },]
 
 const Tools = () => {

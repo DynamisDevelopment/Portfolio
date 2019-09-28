@@ -19,7 +19,7 @@ const Navbar = ({ show, isMobile }: any) => {
     // * Set navbar state based on screen position
     const full = useSpring({
         to: {
-            backgroundColor: (show || mobile) && isMobile ? '#fff' : 'rgba(0,0,0,0)',
+            backgroundColor: show || mobile ? '#fff' : 'rgba(0,0,0,0)',
             color: show || mobile ? 'black' : '#fff',
         },
         config: config.slow
@@ -29,6 +29,7 @@ const Navbar = ({ show, isMobile }: any) => {
     const hide = useSpring({ to: { display: mobile ? 'flex' : 'none' } })
     const noHide = useSpring({ to: { color: show ? 'rgba(0,0,0,1)' : '#fff' } })
 
+    // * Turn off remove mobile nav if resized to desktop
     useEffect(() => { if (!isMobile) toggle(false) })
     return (
         <animated.div className='navbar' style={full}>

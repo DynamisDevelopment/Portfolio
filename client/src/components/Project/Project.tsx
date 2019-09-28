@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Project.sass'
 import { Props } from '../../sections/portfolio/data'
-import { useSpring, animated, config } from 'react-spring'
+import { useSpring, animated } from 'react-spring'
 
 
 const Project = (props: Props) => {
@@ -36,6 +36,10 @@ const Project = (props: Props) => {
                             {/* // @ts-ignore */}
                             {props.complete && <a href={props.link}><button className='visit-btn'>Visit Website</button></a>}
                             <a href={props.git} className='github-link'><img className='git-link' src="./assets/icons/github-logo.svg" alt="Github logo" /></a>
+                        </div>
+                        <div className="extras">
+                            <p className="design-by">Design By: {props.designBy}</p>
+                            <p>{props.tech.join('/')}</p>
                         </div>
                     </animated.div>}
             </div>
