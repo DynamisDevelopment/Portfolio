@@ -17,7 +17,7 @@
         display: flex 
         flex-direction: column 
         align-items: center
-        height: 80vh
+        height: 70vh
         max-height: 500px
         z-index: 2
         input, textarea 
@@ -40,7 +40,27 @@
             // Layout
             height: 100%
             margin-bottom: 15px
+        .error
+            // Layout
+            @extend .py-2
 
+            // Typography
+            color: red
+            @extend .text-sm
+    .success 
+        // Layout
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        height: 70vh
+        max-height: 500px
+        p 
+            // Layout
+            margin-bottom: 20px
+
+            // Typography
+            @extend .text-lg
     .social 
         // Layout
         display: flex 

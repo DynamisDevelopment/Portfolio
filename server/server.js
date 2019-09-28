@@ -8,12 +8,7 @@ const app = express()
 app.use(express.json())
 app.use(cors());
 
-app.get('/', (req, res) => {
-    res.send('Hello')
-})
-
 app.post('/send', async (req, res) => {
-    console.log(process.env.PASSWORD)
     try {
         const output = `
         <h1>${req.body.name}</h1>
