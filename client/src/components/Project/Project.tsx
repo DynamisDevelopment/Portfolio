@@ -38,7 +38,7 @@ const Project = (props: Props) => {
                             <a href={props.git} className='github-link'><img className='git-link' src="./assets/icons/github-logo.svg" alt="Github logo" /></a>
                         </div>
                         <div className="extras">
-                            <p className="design-by">Design By: {props.designBy}</p>
+                            {props.designBy ? <p className="design-by">Design By: {props.designBy}</p> : <p></p>}
                             <p>{props.tech.join('/')}</p>
                         </div>
                     </animated.div>}

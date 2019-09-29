@@ -33,7 +33,7 @@ const Navbar = ({ show, isMobile }: any) => {
     useEffect(() => { if (!isMobile) toggle(false) })
     return (
         <animated.div className='navbar' style={full}>
-            <img src="../assets/icons/dynamis-logo-white.svg" alt="Dynamis Development Logo" className='profile-pic' />
+            <a href="https://www.dynamisdevelopment.com/" target="_blank"><img src="../assets/icons/dynamis-logo-white.svg" alt="Dynamis Development Logo" className='profile-pic' /></a>
             <img src="../assets/icons/burger.svg" alt="Navigation Burger" className="burger" onClick={() => toggle(!mobile)} />
             <animated.ul className="links" style={isMobile ? hide : noHide}>
                 {/* //* Add swoop animation to each item in links */}

@@ -26,6 +26,9 @@ const tools: Props[] = [{
 }, {
     image: '../assets/icons/electron.png',
     name: 'Electron'
+}, {
+    image: '../assets/icons/wordpress-logo.svg',
+    name: 'Wordpress'
 },]
 
 const Tools = () => {

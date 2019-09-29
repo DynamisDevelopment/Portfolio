@@ -12,7 +12,7 @@ export interface Props {
 export const projects: Props[] = [{
     image: '../assets/projects/bauwerk.jpg',
     name: 'Bauwerk',
-    desc: 'Blog and portfolio site for an architecture company, built with Gatsby and Contentful.',
+    desc: 'Blog and portfolio site for an architectural design company.',
     link: 'https://bauwerk.netlify.com/',
     git: 'https://github.com/DynamisDevelopment/Bauwerk',
     designBy: 'itimasthemes',
@@ -20,15 +20,25 @@ export const projects: Props[] = [{
     complete: true,
     id: 1
 }, {
-    image: '../assets/projects/tajam.jpg',
-    name: 'Tajam',
-    desc: 'Branding site for a small development agency. Built with Pug and Sass',
+    image: '../assets/projects/happy_paws.jpg',
+    name: 'Yuppie Puppies',
+    desc: 'Branding page and blog for a pet adoption service.',
     link: '',
     git: '',
-    designBy: 'Aji Darmawan',
-    tech: ['Pug', 'Sass', 'Materialize'],
-    complete: true,
+    designBy: 'ThemesPlace',
+    tech: ['Wordpress'],
+    complete: false,
     id: 2
+}, {
+    image: '../assets/projects/qertsa.jpg',
+    name: 'Qertsa',
+    desc: 'A native Android chat app for sharing messages, photos, and videos.  ',
+    link: '',
+    git: '',
+    designBy: 'Ogwebsolutions',
+    tech: ['Flutter', 'Firebase'],
+    complete: false,
+    id: 3
 }, {
     image: '../assets/projects/eren.jpg',
     name: 'Eren',
@@ -37,16 +47,6 @@ export const projects: Props[] = [{
     git: '',
     designBy: 'Erendesigner',
     tech: ['React', 'NextJS', 'GraphQL', 'Moltin'],
-    complete: false,
-    id: 3
-}, {
-    image: '../assets/projects/lexica.jpg',
-    name: 'Lexica',
-    desc: 'A fullstack site and mobile app for learning languages with real content. Built with React, Prisma/GraphQL, and Flutter',
-    link: '',
-    git: '',
-    designBy: 'Myself',
-    tech: ['React', 'GraphQL', 'CloudML', 'Flutter'],
     complete: false,
     id: 4
 }]

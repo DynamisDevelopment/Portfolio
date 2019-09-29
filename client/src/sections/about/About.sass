@@ -3,8 +3,12 @@
 .about 
     // Layout
     padding: 35px 10vw 35px 10vw
-    min-height: 400px
-    @extend .center
+    min-height: 400px 
+    height: 100%
+    display: flex 
+    flex-direction: column 
+    justify-content: space-around
+    align-items: center
 
     // Typography
     font-weight: 600
@@ -18,12 +22,27 @@
     background-position: center
     background-attachment: fixed
     background-size: cover
-    .SectionTitle h1
-        // Typography
-        color: #fff !important
+    .SectionTitle 
+        // Layout
+        margin-top: -50px
+        h1
+            // Typography
+            color: #fff !important
     .SectionTitle .line
         // Typography
         background-color: #fff !important
     p 
         // Layout
         @extend .container, .md-px-20, .lg-px-40
+    .btn 
+        // Layout
+        margin-top: -50px
+        
+        // Typography
+        color: #fff
+        border-color: #fff
+        &:hover 
+            // Misc Styling
+            background: #fff
+            color: rgb(164,48,252)
+            
