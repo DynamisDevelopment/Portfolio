@@ -19,27 +19,39 @@ export const projects: Props[] = [{
     tech: ['React', 'Gatsby', 'Contentful'],
     complete: true,
     id: 1
-}, {
+}, //{
+//     image: '../assets/projects/tajam.jpg',
+//     name: 'Tajam',
+//     desc: 'Branding page for a creative service agency.',
+//     link: '',
+//     git: '',
+//     designBy: 'Aji Darmawan',
+//     tech: ['Pug', 'Sass'],
+//     complete: true,
+//     id: 2
+// }, 
+{
     image: '../assets/projects/happy_paws.jpg',
-    name: 'Yuppie Puppies',
+    name: 'Happy Paws',
     desc: 'Branding page and blog for a pet adoption service.',
     link: '',
     git: '',
     designBy: 'ThemesPlace',
-    tech: ['Wordpress'],
+    tech: ['Gatsby', 'Wordpress', 'WooCommerce'],
     complete: false,
     id: 2
-}, {
-    image: '../assets/projects/qertsa.jpg',
-    name: 'Qertsa',
-    desc: 'A native Android chat app for sharing messages, photos, and videos.  ',
-    link: '',
-    git: '',
-    designBy: 'Ogwebsolutions',
-    tech: ['Flutter', 'Firebase'],
-    complete: false,
-    id: 3
-}, {
+},// {
+//     image: '../assets/projects/qertsa.jpg',
+//     name: 'Qertsa',
+//     desc: 'A native Android chat app for sharing messages, photos, and videos.  ',
+//     link: '',
+//     git: '',
+//     designBy: 'Ogwebsolutions',
+//     tech: ['Flutter', 'Firebase'],
+//     complete: false,
+//     id: 3
+// }, 
+{
     image: '../assets/projects/eren.jpg',
     name: 'Eren',
     desc: 'A fullstack furniture store built with React, GraphQL, and Next.js.',
