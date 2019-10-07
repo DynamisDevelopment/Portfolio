@@ -12,7 +12,7 @@ const Articles = () => {
 
     return (
         <div className='bg center' id="Articles">
-            <SectionTitle title={"Articles"} subtitle={'I am currently a technical writer for Alligator.io'} />
+            <SectionTitle title={"Articles"} subtitle={'I am currently a consistent technical writer for Alligator.io'} />
 
             <div className="responsive-grid">
                 {reveal.map((animation, i) => <animated.div style={animation} key={i}>
