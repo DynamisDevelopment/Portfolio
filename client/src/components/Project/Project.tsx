@@ -34,8 +34,8 @@ const Project = (props: Props) => {
                         <h2>{props.desc}</h2>
                         <div className="more-links">
                             {/* // @ts-ignore */}
-                            {props.complete && <a href={props.link}><button className='visit-btn'>Visit Website</button></a>}
-                            <a href={props.git} className='github-link'><img className='git-link' src="./assets/icons/github-logo.svg" alt="Github logo" /></a>
+                            {props.complete && <a href={props.link} target="_blank" rel="noopener"><button className='visit-btn'>Visit Website</button></a>}
+                            <a href={props.git} className='github-link' target="_blank"><img className='git-link' src="./assets/icons/github-logo.svg" alt="Github logo" /></a>
                         </div>
                         <div className="extras">
                             {props.designBy ? <p className="design-by">Design By: {props.designBy}</p> : <p></p>}

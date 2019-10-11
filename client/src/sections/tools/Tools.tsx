@@ -18,7 +18,7 @@ const tools: Props[] = [{
     image: '../assets/icons/flutter-logo.svg',
     name: 'Flutter'
 }, {
-    image: '../assets/icons/mongodb.png',
+    image: '../assets/icons/mongo-logo.svg',
     name: 'MongoDB'
 }, {
     image: '../assets/icons/graphql-logo.svg',
@@ -27,9 +27,9 @@ const tools: Props[] = [{
     image: '../assets/icons/electron.png',
     name: 'Electron'
 }, {
-    image: '../assets/icons/wordpress-logo.svg',
-    name: 'Wordpress'
-},]
+    image: '../assets/icons/docker-logo.svg',
+    name: 'Docker'
+}]
 
 const Tools = () => {
     return (

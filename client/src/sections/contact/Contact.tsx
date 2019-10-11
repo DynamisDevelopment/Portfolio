@@ -7,7 +7,6 @@ import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import { useSpring, animated } from 'react-spring'
 
-// import Rain from './Rain'
 
 const Contact = () => {
     // * Set copyright date dynamically
@@ -16,7 +15,6 @@ const Contact = () => {
     return (
         <div className='contact' id="Contact">
             <SectionTitle title={"Contact"} subtitle={'Got something interesting?'} />
-            {/* <Rain /> */}
             <FormikForm />
             <div className="social">
                 <a href="https://www.linkedin.com/in/joshua-hall-51b182185/" className="circle" target="_blanck"><img src="../assets/icons/linkedin-logo.svg" alt="Linkedin Logo" /></a>
@@ -34,10 +32,13 @@ const ContactForm = ({ errors, touched }) => {
     return (
         <div>
             <Form className='contact-form'>
+                <label htmlFor="name">Name</label>
                 <Field type="text" name="name" placeholder="Name" required />
                 {touched.name && errors.name && <p className='error'>{errors.name}</p>}
+                <label htmlFor="name">Email</label>
                 <Field type="email" name="email" placeholder="Email" required />
                 {touched.name && errors.email && <p className='error'>{errors.email}</p>}
+                <label htmlFor="name">Message</label>
                 <Field component='textarea' name="message" placeholder="Message" />
                 {touched.message && errors.message && <p className='error'>{errors.message}</p>}
                 <button type="submit" className='btn'>Submit</button>

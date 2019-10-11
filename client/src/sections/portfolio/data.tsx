@@ -21,12 +21,12 @@ export const projects: Props[] = [{
     id: 1
 }, {
     image: '../assets/projects/happy_paws.jpg',
-    name: 'Yuppie Puppies',
+    name: 'Happy Paws',
     desc: 'Branding page and blog for a pet adoption service.',
     link: '',
-    git: '',
+    git: 'https://github.com/DynamisDevelopment/Happy-Paws.git',
     designBy: 'ThemesPlace',
-    tech: ['Wordpress'],
+    tech: ['Gatsby', 'React', 'Wordpress', 'WooCommerce'],
     complete: false,
     id: 2
 }, //{
@@ -43,7 +43,7 @@ export const projects: Props[] = [{
 {
     image: '../assets/projects/eren.jpg',
     name: 'Eren',
-    desc: 'A fullstack furniture store built with React, GraphQL, and Next.js.',
+    desc: 'A fullstack furniture store based on a clean and modern, aesthetic.',
     link: '',
     git: '',
     designBy: 'Erendesigner',
