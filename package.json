@@ -10,8 +10,7 @@
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
         "netlify": "concurrently \"yarn server\" \"yarn build\" ",
-        "client-intall": "npm install --prefix client",
-        // "postbuild": "purgecss --css build/static/css/*.css --content build/static/index.html build/static/js/*.js --out build/static/css"
+        "client-intall": "npm install --prefix client"
     },
     "keywords": [],
     "author": "Joshua Hall",
