@@ -9,7 +9,7 @@
         "build": "cd client && yarn build",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "netlify": "concurrently \"yarn server\" \"yarn build\" ",
+        "netlify": "concurrently \"npm run server\" \"cd client npm install && npm build\" ",
         "client-intall": "npm install --prefix client"
     },
     "keywords": [],
