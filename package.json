@@ -10,7 +10,7 @@
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
         "netlify": "concurrently \"npm run server\" \"npm run client-install && npm run build\" ",
-        "client-intall": "npm install --prefix client"
+        "client-install": "npm install --prefix client"
     },
     "keywords": [],
     "author": "Joshua Hall",
