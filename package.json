@@ -9,7 +9,7 @@
         "build": "cd client && npm run build",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "netlify": "cd client && npm install && npm run build",
+        "netlify": "concurrently \"cd client && npm install && npm run build\" \"npm run server\"",
         "client-install": "npm install --prefix client"
     },
     "keywords": [],
