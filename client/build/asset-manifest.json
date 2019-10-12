@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.232cdf3a.chunk.css",
-    "main.js": "/static/js/main.6c424f57.chunk.js",
-    "main.js.map": "/static/js/main.6c424f57.chunk.js.map",
+    "main.js": "/static/js/main.ddb8d8fa.chunk.js",
+    "main.js.map": "/static/js/main.ddb8d8fa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a245edba.js",
     "runtime-main.js.map": "/static/js/runtime-main.a245edba.js.map",
     "static/js/2.66c590bb.chunk.js": "/static/js/2.66c590bb.chunk.js",
     "static/js/2.66c590bb.chunk.js.map": "/static/js/2.66c590bb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d5959d50f20a644f575c5a44d55d80c2.js": "/precache-manifest.d5959d50f20a644f575c5a44d55d80c2.js",
+    "precache-manifest.bc6fc0c9e6a975f1d30193d0052a6bbe.js": "/precache-manifest.bc6fc0c9e6a975f1d30193d0052a6bbe.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.232cdf3a.chunk.css.map": "/static/css/main.232cdf3a.chunk.css.map",
     "static/media/About.sass": "/static/media/mini-space-bg.c42358e1.svg",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.a245edba.js",
     "static/js/2.66c590bb.chunk.js",
     "static/css/main.232cdf3a.chunk.css",
-    "static/js/main.6c424f57.chunk.js"
+    "static/js/main.ddb8d8fa.chunk.js"
   ]
 }
