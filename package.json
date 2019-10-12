@@ -5,11 +5,12 @@
     "main": "index.js",
     "scripts": {
         "server": "node server/server.js",
-        "start": "npm start --prefix client",
+        "start": "node server/server.js",
         "build": "cd client && npm run build",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "netlify": "concurrently \"cd client && npm install && npm run build\" \"npm run server\"",
+        "netlify": "concurrently \"npm run server\" \"cd client && npm install && npm run build\" ",
+        "heroku-postbuild": "cd client && yarn && yarn run build",
         "client-install": "npm install --prefix client"
     },
     "keywords": [],
