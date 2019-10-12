@@ -9,7 +9,7 @@
         "build": "cd client && npm run build",
         "client": "npm start --prefix client",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "netlify": "concurrently \"yarn server\" \"cd client yarn && yarn build\"",
+        "netlify": "concurrently \"yarn server\" \"cd client yarn install && yarn build\"",
         "client-intall": "npm install --prefix client",
         "postbuild": "purgecss --css build/static/css/*.css --content build/static/index.html build/static/js/*.js --out build/static/css"
     },
