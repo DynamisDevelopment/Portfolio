@@ -43,7 +43,7 @@ export const projects: Props[] = [{
 {
     image: '../assets/projects/eren.jpg',
     name: 'Eren',
-    desc: 'A fullstack furniture store based on a clean and modern, aesthetic.',
+    desc: 'A fullstack furniture store based on a clean and modern aesthetic.',
     link: '',
     git: '',
     designBy: 'Erendesigner',
