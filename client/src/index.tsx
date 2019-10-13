@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './global.sass'
 import { Waypoint } from 'react-waypoint'
+import { Helmet } from "react-helmet"
 
 // * Components 
 import Navbar from './components/Navbar/Navbar'
@@ -20,6 +21,10 @@ const HomePage = () => {
     const [show, toggle] = useState(false)
     return (
         <div>
+            <Helmet>
+                <title>Joshua Hall - Web Extraordinaire</title>
+                <link rel="icon" href="../assets/icons/dynamis-logo.ico" sizes="16x16" />
+            </Helmet>
             <Jumbotron />
             {/* // @ts-ignore */}
             <Navbar show={show} />
