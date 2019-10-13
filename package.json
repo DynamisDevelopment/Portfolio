@@ -4,14 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "server": "node server/server.js",
-        "start": "node server/server.js",
+        "start": "cd client && npm run start",
         "build": "cd client && npm run build",
         "client": "npm start --prefix client",
-        "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "netlify": "concurrently \"npm run server\" \"cd client && npm install && npm run build\" ",
-        "heroku-postbuild": "cd client && yarn install && yarn run build",
-        "client-install": "npm install --prefix client"
+        "dev": "npm run client && npm run lambda-serve",
+        "netlify": "concurrently \"yarn lambda-serve\" \"cd client && yarn start\" ",
+        "client-install": "yarn install --prefix client",
+        "lambda-serve": "netlify-lambda serve functions",
+        "lambda-build": "netlify-lambda build functions"
     },
     "keywords": [],
     "author": "Joshua Hall",
@@ -23,12 +23,13 @@
         "cors": "^2.8.5",
         "create-react-app": "^3.0.1",
         "dotenv": "^8.1.0",
-        "env-cmd": "^10.0.1",
         "express": "^4.17.1",
         "glob-all": "^3.1.0",
         "mongodb": "^3.2.7",
+        "netlify-lambda": "^1.6.3",
         "nodemailer": "^6.3.0",
-        "purgecss-webpack-plugin": "^1.6.0"
+        "purgecss-webpack-plugin": "^1.6.0",
+        "webpack": "4.41.0"
     },
     "devDependencies": {
         "nodemon": "^1.19.1"

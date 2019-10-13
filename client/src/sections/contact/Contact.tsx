@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Contact.sass'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import 'axios'
 import axios from 'axios'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
-import { useSpring, animated } from 'react-spring'
 
 
 const Contact = () => {
@@ -65,7 +64,7 @@ const FormikForm = withFormik({
     handleSubmit(values, { resetForm }) {
         axios({
             method: 'post',
-            url: '/send',
+            url: '/.netlify/functions/server',
             data: {
                 name: values.name,
                 email: values.email,
