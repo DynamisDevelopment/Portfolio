@@ -10,31 +10,38 @@
     top: 0
     z-index: 10
     @extend .sm-justify-between, .md-justify-around
+    @extend .sm-flex-col
 
     // Misc Styling
     @extend .shadow-2xl
-    .profile-pic 
+    .row
         // Layout
-        height: 55px
-        width: 55px
-        border-radius: 50%
-        @extend .sm-ml-8
-    .burger 
-        // Layout
-        height: 40px  
-        width: 40px
-        @extend .md-hidden 
-        @extend .sm-mr-8
+        width: 100vw
+        justify-content: space-between
+        align-items: center
+        @extend .sm-flex, .md-absolute
+        .profile-pic 
+            // Layout
+            height: 55px
+            width: 55px
+            border-radius: 50%
+            @extend .sm-ml-8
+        .burger 
+            // Layout
+            height: 40px  
+            width: 40px
+            @extend .md-hidden 
+            @extend .sm-mr-8
 
-        // Misc Styling
-        cursor: pointer
+            // Misc Styling
+            cursor: pointer
     .links 
         // Layout
         display: flex
         justify-content: space-around
         @extend .sm-w-full
         @extend .sm-flex-col, .md-flex-row
-        @extend .sm-absolute, .md-relative
+        // @extend .sm-absolute, .md-relative
         @extend .sm-items-center
 
         // Typography
@@ -47,7 +54,7 @@
         a 
             // Layout
             @extend .sm-py-4, .md-py-0
-
-@media screen and (max-width: 650px)
-    .links 
-        margin-top: 180px
+    .mobile 
+        // Layout
+        // margin-top: 350px
+        .md-hidden
