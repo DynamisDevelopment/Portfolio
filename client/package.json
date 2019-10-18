@@ -20,13 +20,15 @@
     "react-use-gesture": "^5.2.4",
     "react-waypoint": "^9.0.2",
     "typescript": "3.5.2",
-    "yup": "^0.27.0"
+    "yup": "^0.27.0",
+    "purgecss-webpack-plugin": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && postbuild",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "purgecss --css build/static/css/*.css --content build/static/index.html build/static/js/*.js --out build/static/css"
   },
   "eslintConfig": {
     "extends": "react-app"

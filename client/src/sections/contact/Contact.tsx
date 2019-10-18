@@ -31,14 +31,17 @@ const ContactForm = ({ errors, touched }) => {
     return (
         <div>
             <Form className='contact-form'>
-                <label htmlFor="name">Name</label>
-                <Field type="text" name="name" placeholder="Name" required />
+                <label> Name
+                    <Field type="text" name="name" placeholder="Name" required />
+                </label>
                 {touched.name && errors.name && <p className='error'>{errors.name}</p>}
-                <label htmlFor="name">Email</label>
-                <Field type="email" name="email" placeholder="Email" required />
+                <label> Email
+                    <Field type="email" name="email" placeholder="Email" required />
+                </label>
                 {touched.name && errors.email && <p className='error'>{errors.email}</p>}
-                <label htmlFor="name">Message</label>
-                <Field component='textarea' name="message" placeholder="Message" />
+                <label> Message
+                    <Field component='textarea' name="message" id="message" placeholder="Message" />
+                </label>
                 {touched.message && errors.message && <p className='error'>{errors.message}</p>}
                 <button type="submit" className='btn'>Submit</button>
             </Form>

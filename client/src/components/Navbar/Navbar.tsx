@@ -34,18 +34,17 @@ const Navbar = ({ show, isMobile }: any) => {
     return (
         <animated.div className='navbar' style={full}>
             <div className="row">
-                <a href="https://www.dynamisdevelopment.com/" target="_blank"><img src="../assets/icons/dynamis-logo-white.svg" alt="Dynamis Development Logo" className='profile-pic' /></a>
+                <a href="https://www.dynamisdevelopment.com/" target="_blank" rel="noreferrer"><img src="../assets/icons/dynamis-logo-white.svg" alt="Dynamis Development Logo" className='profile-pic' /></a>
                 <img src="../assets/icons/burger.svg" alt="Navigation Burger" className="burger" onClick={() => toggle(!mobile)} />
             </div>
 
             <animated.ul className="links" style={isMobile ? hide : noHide}>
                 {/* //* Add swoop animation to each item in links */}
-                {swoop.map((animation, index) => <animated.a
-                    href={`#${links[index].name}`}
+                {swoop.map((animation, index) => <animated.li
                     style={animation}
                     key={index}
                     onClick={() => toggle(!mobile)}>
-                    <li>{links[index].name}</li></animated.a>)}
+                    <a href={`#${links[index].name}`}> {links[index].name} </a></animated.li>)}
             </animated.ul>
         </animated.div >
     )

@@ -28,7 +28,6 @@
         "mongodb": "^3.2.7",
         "netlify-lambda": "^1.6.3",
         "nodemailer": "^6.3.0",
-        "purgecss-webpack-plugin": "^1.6.0",
         "webpack": "4.41.0"
     },
     "devDependencies": {
