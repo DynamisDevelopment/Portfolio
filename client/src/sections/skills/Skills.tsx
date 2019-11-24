@@ -14,7 +14,7 @@ const skills: Props[] = [{
 }, {
     icon: '../assets/icons/development.svg',
     title: 'Mobile Development',
-    text: 'I use Flutter and React Native to create dynamic and scalable apps for Android.'
+    text: 'I use Flutter and React Native to create dynamic and scalable apps once for Android and IOS.'
 }, {
     icon: '../assets/icons/development.svg',
     title: 'Testing and Maintenance',
@@ -31,3 +31,5 @@ const Skills = () => {
 }
 
 export default Skills
+
+// - Free Hotjar Integration; For every complete site that I build I throw in a month of site analytics using Hotjar. This way we can see exactly how users are experiencing the site and I can make adjustments based on what we learn.

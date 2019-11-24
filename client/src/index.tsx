@@ -13,7 +13,7 @@ import Skills from './sections/skills/Skills'
 import Tools from './sections/tools/Tools'
 import Portfolio from './sections/portfolio/Portfolio'
 import Articles from './sections/articles/Articles'
-import About from './sections/about/About'
+import { About, Reviews } from './sections/about/About'
 import Contact from './sections/contact/Contact'
 
 const HomePage = () => {
@@ -33,6 +33,7 @@ const HomePage = () => {
             <Skills />
             <Tools />
             <Portfolio />
+            <Reviews />
             <Articles />
             <About />
             <Contact />

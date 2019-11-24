@@ -27,7 +27,7 @@
         margin-top: -50px
         h1
             // Typography
-            color: #fff !important
+            color: #fff 
     .SectionTitle .line
         // Typography
         background-color: #fff !important
@@ -47,4 +47,29 @@
             // Misc Styling
             background: #fff
             color: rgb(164,48,252)
+
+.reviews 
+    @extend .about
+
+    // Layout
+    min-height: 200px 
+
+    // Misc Styling
+    color: #1a202c
+    background-image: none
+    .SectionTitle h1 
+        // Misc Styling
+        color: rgba(120, 48, 252, .9)
+    .btn 
+        // Misc Styling
+        color: rgba(120, 48, 252, 1)
+        border: 2px solid rgba(120, 48, 252, .8)
+        &:hover 
+            // Misc Styling
+            color: #fff
+            background: rgb(164,48,252)
+            background: linear-gradient(to top, rgba(164,48,252,0.7035189075630253) 14%, rgba(120,48,252,1) 100%)
+
+            // Animation
+            transition: .2s ease-in-out
             

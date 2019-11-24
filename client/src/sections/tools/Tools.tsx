@@ -29,13 +29,25 @@ const tools: Props[] = [{
 }, {
     image: '../assets/icons/docker-logo.svg',
     name: 'Docker'
-}]
+},
+    // {
+    //     image: '../assets/icons/firebase-logo.svg',
+    //     name: 'Firebase'
+    // }, {
+    //     image: '../assets/icons/prisma-logo.svg',
+    //     name: 'Prisma'
+    // }
+]
+
+const rowOne = tools.slice(0, 7)
+const rowTwo = tools.slice(7, 14)
 
 const Tools = () => {
     return (
         <div className='bg'>
             <SectionTitle title={'Tech'} subtitle={'I can figure out pretty much anything, but these are what I\'m the most confident with.'} />
-            <div className="tools">{tools.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
+            <div className="tools">{rowOne.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
+            <div className="tools rowTwo">{rowTwo.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
         </div>
     )
 }
