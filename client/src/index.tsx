@@ -20,13 +20,13 @@ import Contact from './sections/contact/Contact'
 const HomePage = () => {
     // @ts-ignore
     const [show, toggle] = useState(false)
+    hotjar.initialize(1627097, 6)
     return (
         <div>
             <Helmet>
                 <title>Joshua Hall - Web Extraordinaire</title>
                 <link rel="icon" href="../assets/icons/dynamis-logo.ico" sizes="16x16" />
                 <meta charSet="utf-8" name="description" content="A freelance fullstack web and mobile app developer." />
-                <script>hotjar.initialize(1627097)</script>
             </Helmet>
             <Jumbotron />
             {/* // @ts-ignore */}
