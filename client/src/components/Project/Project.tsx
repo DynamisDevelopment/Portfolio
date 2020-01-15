@@ -1,24 +1,40 @@
-import React, { useState } from 'react'
-import './Project.sass'
+import React, { useState, useRef } from 'react'
 import { Props } from '../../sections/portfolio/data'
-import { useSpring, animated } from 'react-spring'
 
+// * Components 
+import { useSpring, animated } from 'react-spring'
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    useDisclosure,
+    Stack,
+    Flex,
+    Box,
+    Image,
+    Button
+} from "@chakra-ui/core"
+
+// * Styles 
+import './Project.sass'
 
 const Project = (props: Props) => {
+    // @ts-ignore
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
     // * Swivel Animation
     const calc = (x: number, y: number) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
     const trans = (x: number, y: number, s: number) => `perspective(3000px) rotateX(${x / 2}deg) rotateY(${y / 2}deg)`
     const [move, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 
-    // * Show More Animation 
-    const [more, toggle] = useState(false)
-    const fade = useSpring({
-        to: {
-            opacity: more ? 1 : 0,
-            backgroundColor: more ? '#293347' : 'rgba(0,0,0,0)'
-        }
-    })
-    const fadeReverse = useSpring({ to: { opacity: more ? 0 : 1 } })
+    const btnStyles = {
+        bg: 'purple.600',
+        _hover: { bg: 'purple.700' }
+    }
 
     return (
         <animated.div className='project'
@@ -26,25 +42,40 @@ const Project = (props: Props) => {
             onMouseLeave={() => set({ xys: [0, 0, 1] })}
             // @ts-ignore
             style={{ transform: move.xys.interpolate(trans) }}>
-            <div onMouseEnter={() => toggle(true)} onMouseLeave={() => toggle(false)} onClick={() => toggle(!more)}>
-
-                {/* // * Either show the thumbnail or the details with a fade animation between them. */}
-                {!more ? <animated.img className="thumnail" src={props.image} alt={props.name} style={fadeReverse} /> :
-                    <animated.div className="details" style={fade}>
-                        <h2>{props.desc}</h2>
-                        <div className="more-links">
-                            {/* // @ts-ignore */}
-                            {props.complete && <a href={props.link} target="_blank" rel="noopener"><button className='visit-btn'>Visit Website</button></a>}
-                            <a href={props.git} className='github-link' target="_blank"><img className='git-link' src="./assets/icons/github-logo.svg" alt="Github logo" /></a>
-                        </div>
-                        <div className="extras">
-                            {props.designBy ? <p className="design-by">Design By: {props.designBy}</p> : <p></p>}
-                            <p>{props.tech.join('/')}</p>
-                        </div>
-                    </animated.div>}
+            <div onClick={onOpen}>
+                <animated.img className="thumnail" src={props.image} alt={props.name} />
             </div>
             {!props.complete && <p className='not-complete'>-- Work in Progress --</p>}
-        </animated.div >
+
+            <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
+                <ModalOverlay />
+                <ModalContent color='white'>
+                    <ModalHeader fontSize={'3xl'}> {props.name} </ModalHeader>
+                    <ModalCloseButton color={'purple.500'} size={'lg'} />
+                    <ModalBody fontSize={'1.25em'}> {props.desc} </ModalBody>
+
+                    <ModalFooter className='more-links'>
+                        <Flex w='100%' justify='space-between' align='flex-end'>
+                            <Stack>
+                                <Box> {props.designBy ? <p>Design By: {props.designBy}</p> : <p></p>} </Box>
+                                <Box>{props.tech.join('/')}</Box>
+                            </Stack>
+
+                            <Stack>
+                                {props.complete && <Box><a href={props.git} target="_blank" rel="noopener">
+                                    <Button {...btnStyles}> See Github
+                                        <Image src='./assets/icons/github-logo.svg' rounded='full' size='20px' ml='10px' />
+                                    </Button>
+                                </a></Box>}
+                                {props.complete && <Box><a href={props.link} target="_blank" rel="noopener">
+                                    <Button {...btnStyles}>Visit Website →</Button>
+                                </a></Box>}
+                            </Stack>
+                        </Flex>
+                    </ModalFooter>
+                </ModalContent>
+            </Modal>
+        </animated.div>
 
     )
 }

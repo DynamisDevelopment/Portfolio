@@ -6,6 +6,7 @@
     @extend .card, .center
 
     // Misc Styling
+    cursor: pointer
     .thumbnail, .details 
         // Layout
         height: 250px
@@ -30,43 +31,44 @@
         @extend .text-xl
     .more-links 
         // Layout
+        width: 100%
         display: flex
         align-items: center 
         justify-content: space-between
-        .visit-btn
-            // Layout
-            margin: 15px 15px 0 0
-            padding: 5px 15px 5px 15px
-            height: 50px
-            border-radius: 50px
+    //     .visit-btn
+    //         // Layout
+    //         margin: 15px 15px 0 0
+    //         padding: 5px 15px 5px 15px
+    //         height: 50px
+    //         border-radius: 50px
 
-            // Typography
-            color: rgba(120, 48, 252, 1)
+    //         // Typography
+    //         color: rgba(120, 48, 252, 1)
 
-            // Misc Styling
-            border: 2px solid rgba(120, 48, 252, .8)
-            &:hover, button:hover 
-                color: #fff
-                @extend .gradient-bg
-        .github-link
-            // Layout
-            height: 45px 
-            width: 45px 
-            margin-top: 10px
-            @extend .circle
-            .git-link
-                // Layout
-                width: 30px 
-                height: 30px 
-    .extras
-        // Layout
-        display: flex 
-        width: 120%
-        justify-content: space-between
-        margin-bottom: -35px
+    //         // Misc Styling
+    //         border: 2px solid rgba(120, 48, 252, .8)
+    //         &:hover, button:hover 
+    //             color: #fff
+    //             @extend .gradient-bg
+    //     .github-link
+    //         // Layout
+    //         height: 45px 
+    //         width: 45px 
+    //         margin-top: 10px
+    //         @extend .circle
+    //         .git-link
+    //             // Layout
+    //             width: 30px 
+    //             height: 30px 
+    // .extras
+    //     // Layout
+    //     display: flex 
+    //     width: 120%
+    //     justify-content: space-between
+    //     margin-bottom: -35px
 
-        // Typography
-        @extend .text-xs
+    //     // Typography
+    //     @extend .text-xs
     .not-complete 
         // Layout
         margin-top: 10px

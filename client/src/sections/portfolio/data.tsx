@@ -31,7 +31,7 @@ export const projects: Props[] = [{
     id: 2
 }, {
     image: '../assets/projects/itmemaths.jpg',
-    name: 'ReactAtScale',
+    name: 'React At Scale',
     desc: 'Blog and portfolio site for an architectural design company.',
     link: 'react-at-scale.netlify.com',
     git: 'https://github.com/DynamisDevelopment/ItMeMaths',
@@ -39,4 +39,14 @@ export const projects: Props[] = [{
     tech: ['React', 'Gatsby', 'Markdown', 'TinaCMS'],
     complete: true,
     id: 3
+}, {
+    image: '../assets/projects/itmemaths.jpg',
+    name: 'Habitica Social',
+    desc: 'Blog and portfolio site for an architectural design company.',
+    link: 'react-at-scale.netlify.com',
+    git: 'https://github.com/DynamisDevelopment/ItMeMaths',
+    designBy: 'Myself',
+    tech: ['React', 'Gatsby', 'Markdown', 'TinaCMS'],
+    complete: false,
+    id: 4
 }]

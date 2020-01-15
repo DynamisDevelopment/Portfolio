@@ -20,7 +20,7 @@ const Portfolio = () => {
                         name={projects[i].name}
                         desc={projects[i].desc}
                         link={projects[i].link}
-                        git={projects[i].link}
+                        git={projects[i].git}
                         tech={projects[i].tech}
                         designBy={projects[i].designBy}
                         complete={projects[i].complete}
