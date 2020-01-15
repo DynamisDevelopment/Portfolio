@@ -31,5 +31,3 @@ const Skills = () => {
 }
 
 export default Skills
-
-// - Free Hotjar Integration; For every complete site that I build I throw in a month of site analytics using Hotjar. This way we can see exactly how users are experiencing the site and I can make adjustments based on what we learn.

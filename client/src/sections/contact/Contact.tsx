@@ -39,7 +39,7 @@ const ContactForm = ({ errors, touched }) => {
                 {touched.message && errors.message && <p className='error'>{errors.message}</p>}
                 <button type="submit" className='btn'>Submit</button>
             </Form>
-        </div >
+        </div>
     )
 }
 

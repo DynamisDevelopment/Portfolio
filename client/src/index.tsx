@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import './global.sass'
 import { Waypoint } from 'react-waypoint'
 import { Helmet } from "react-helmet"
+import { ThemeProvider } from "@chakra-ui/core"
 
 // * Components 
 import Navbar from './components/Navbar/Navbar'
@@ -43,5 +44,6 @@ const HomePage = () => {
     )
 }
 
-ReactDOM.render(<HomePage />, document.getElementById('root'))
+const ThemedSite = () => <ThemeProvider> <HomePage /> </ThemeProvider>
+ReactDOM.render(<ThemedSite />, document.getElementById('root'))
 

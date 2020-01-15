@@ -8,6 +8,7 @@ const Article = (props: Props) => {
     const calc = (x: number, y: number) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
     const trans = (x: number, y: number, s: number) => `perspective(2000px) rotateX(${x / 1.5}deg) rotateY(${y / 1.5}deg)`
     const [move, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 2, tension: 350, friction: 40 } }))
+
     return (
         <animated.div className='post'
             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
