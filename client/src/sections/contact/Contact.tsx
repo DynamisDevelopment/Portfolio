@@ -59,6 +59,7 @@ const FormikForm = withFormik({
         message: Yup.string().min(25, 'Message must be more than 25 characters long, be descriptive :)').required('A message is required')
     }),
     handleSubmit(values, { resetForm }) {
+        console.log(values)
         axios({
             method: 'post',
             url: '/.netlify/functions/server',
@@ -69,7 +70,7 @@ const FormikForm = withFormik({
             }
         })
             .then(res => resetForm())
-            .catch(e => console.log(e))
+            .catch(e => console.log('Error: ', e))
     }
     // @ts-ignore
 })(ContactForm)

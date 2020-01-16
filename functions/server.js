@@ -2,6 +2,8 @@ const nodemailer = require('nodemailer')
 
 exports.handler = function (event, context, callback) {
     const message = JSON.parse(event.body)
+    console.log(message)
+
     const output = `
         <h1>${message.name}</h1>
         <h3>${message.email}</h3>
@@ -30,10 +32,6 @@ exports.handler = function (event, context, callback) {
         if (error) callback(error)
         else callback(null, {
             statusCode: 200,
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
-            },
             body: "Ok"
         })
     })
