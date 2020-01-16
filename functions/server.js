@@ -19,7 +19,7 @@ exports.handler = function (event, context, callback) {
         tls: {
             rejectUnauthorized: false
         }
-    });
+    })
 
     transporter.sendMail({
         from: message.email,
@@ -30,7 +30,11 @@ exports.handler = function (event, context, callback) {
         if (error) callback(error)
         else callback(null, {
             statusCode: 200,
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+            },
             body: "Ok"
-        });
+        })
     })
 }
