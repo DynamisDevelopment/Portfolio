@@ -30,13 +30,17 @@ const tools: Props[] = [{
     image: '../assets/icons/docker-logo.svg',
     name: 'Docker'
 },
-    // {
-    //     image: '../assets/icons/firebase-logo.svg',
-    //     name: 'Firebase'
-    // }, {
-    //     image: '../assets/icons/prisma-logo.svg',
-    //     name: 'Prisma'
-    // }
+{
+    image: '../assets/icons/firebase-logo.svg',
+    name: 'Firebase'
+}, {
+    image: '../assets/icons/prisma-logo.svg',
+    name: 'Prisma'
+},
+{
+    image: '../assets/icons/kubernetes-logo.svg',
+    name: 'Kubernetes'
+}
 ]
 
 const rowOne = tools.slice(0, 7)
@@ -47,7 +51,7 @@ const Tools = () => {
         <div className='bg'>
             <SectionTitle title={'Tech'} subtitle={'I can figure out pretty much anything, but these are what I\'m the most confident with.'} />
             <div className="tools">{rowOne.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
-            <div className="tools rowTwo">{rowTwo.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
+            <div className="toolsTwo">{rowTwo.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
         </div>
     )
 }
