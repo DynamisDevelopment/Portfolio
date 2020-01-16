@@ -62,12 +62,12 @@ const Project = (props: Props) => {
                             </Stack>
 
                             <Stack>
-                                {props.complete && <Box><a href={props.git} target="_blank" rel="noopener">
+                                {props.git && <Box><a href={props.git} target="_blank" rel="noopener">
                                     <Button {...btnStyles}> See Github
                                         <Image src='./assets/icons/github-logo.svg' rounded='full' size='20px' ml='10px' />
                                     </Button>
                                 </a></Box>}
-                                {props.complete && <Box><a href={props.link} target="_blank" rel="noopener">
+                                {props.link && <Box><a href={props.link} target="_blank" rel="noopener">
                                     <Button {...btnStyles}>Visit Project →</Button>
                                 </a></Box>}
                             </Stack>
