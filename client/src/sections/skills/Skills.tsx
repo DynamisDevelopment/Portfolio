@@ -4,7 +4,7 @@ import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import Skill, { Props } from '../../components/Skill/Skill'
 
 const skills: Props[] = [{
-    icon: '../assets/icons/development.svg',
+    icon: '../assets/icons/design.svg',
     title: 'Web Design',
     text: 'I work with the best designers to create efficient and engaging web experiences with the focus on user and business needs.'
 }, {
@@ -12,11 +12,11 @@ const skills: Props[] = [{
     title: 'Web Development',
     text: 'Quick, clean, and maintanable solutions using the latest technology and best practices.'
 }, {
-    icon: '../assets/icons/development.svg',
+    icon: '../assets/icons/mobile.svg',
     title: 'Mobile Development',
     text: 'I use Flutter and React Native to create dynamic and scalable apps once for Android and IOS.'
 }, {
-    icon: '../assets/icons/development.svg',
+    icon: '../assets/icons/testing.svg',
     title: 'Testing and Maintenance',
     text: 'Looking for long-term partnerships to continuously update and improve your site.'
 }]
