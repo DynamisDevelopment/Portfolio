@@ -47,7 +47,7 @@ const Project = (props: Props) => {
             </div>
             {!props.complete && <p className='not-complete'>-- Work in Progress --</p>}
 
-            <Modal isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
+            <Modal isOpen={isOpen} onClose={onClose} isCentered>
                 <ModalOverlay />
                 <ModalContent color='white'>
                     <ModalHeader fontSize={'3xl'}> {props.name} </ModalHeader>
@@ -68,7 +68,7 @@ const Project = (props: Props) => {
                                     </Button>
                                 </a></Box>}
                                 {props.complete && <Box><a href={props.link} target="_blank" rel="noopener">
-                                    <Button {...btnStyles}>Visit Website →</Button>
+                                    <Button {...btnStyles}>Visit Project →</Button>
                                 </a></Box>}
                             </Stack>
                         </Flex>

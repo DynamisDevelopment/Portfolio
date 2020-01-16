@@ -61,7 +61,7 @@ const FormikForm = withFormik({
     handleSubmit(values, { resetForm }) {
         axios({
             method: 'post',
-            url: '/.netlify/functions/server',
+            url: './.netlify/functions/server',
             data: {
                 name: values.name,
                 email: values.email,

@@ -17,6 +17,7 @@ const Article = (props: Props) => {
             style={{ transform: move.xys.interpolate(trans) }}>
             <a href={props.link} target="_blanck" rel="noopener"><img src={props.thumb} alt={`${props.title} thumbnail`} /></a>
             <p className="desc">{props.desc}</p>
+            <p className="quote">{props.quote}</p>
         </animated.div>
     )
 }

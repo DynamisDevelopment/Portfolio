@@ -12,7 +12,7 @@ const Articles = () => {
 
     return (
         <div className='bg center' id="Articles">
-            <SectionTitle title={"Articles"} subtitle={'I am currently a consistent technical writer for Alligator.io'} />
+            <SectionTitle title={"Articles"} subtitle={'I am currently a consistent long-term technical writer for Alligator.io'} />
 
             <div className="responsive-grid">
                 {reveal.map((animation, i) => <animated.div style={animation} key={i}>
@@ -21,6 +21,7 @@ const Articles = () => {
                         thumb={articles[i].thumb}
                         title={articles[i].title}
                         desc={articles[i].desc}
+                        quote={articles[i].quote}
                         link={articles[i].link} />
                 </animated.div>)}
             </div>
