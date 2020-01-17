@@ -3,10 +3,11 @@ import './SectionTitle.sass'
 
 interface Props {
     title: string,
-    subtitle: string
+    subtitle: string,
+    subSubtitle?: string
 }
 
-const SectionTitle = ({ title, subtitle }: Props) => {
+const SectionTitle = ({ title, subtitle, subSubtitle }: Props) => {
     return (
         <div className='SectionTitle'>
             <div className="title">
@@ -15,6 +16,7 @@ const SectionTitle = ({ title, subtitle }: Props) => {
                 <div className="line"></div>
             </div>
             <div className="subtitle">{subtitle}</div>
+            {subSubtitle && <div className="subSubtitle">{subSubtitle}</div>}
         </div>
     )
 }

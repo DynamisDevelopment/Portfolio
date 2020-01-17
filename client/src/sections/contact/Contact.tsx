@@ -1,7 +1,6 @@
 import React from 'react'
 import './Contact.sass'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
-import 'axios'
 import axios from 'axios'
 import { withFormik, Form, Field } from 'formik'
 import * as Yup from 'yup'
@@ -13,7 +12,7 @@ const Contact = () => {
 
     return (
         <div className='contact' id="Contact">
-            <SectionTitle title={"Contact"} subtitle={'Got something interesting?'} />
+            <SectionTitle title={"Contact"} subtitle={'Got something interesting?'} subSubtitle={'Email: devlead@dynamisdevelopment.com'} />
             <FormikForm />
             <div className="social">
                 <a href="https://www.linkedin.com/in/joshua-hall-51b182185/" className="circle" target="_blanck"><img src="../assets/icons/linkedin-logo.svg" alt="Linkedin Logo" /></a>
@@ -59,7 +58,6 @@ const FormikForm = withFormik({
         message: Yup.string().min(25, 'Message must be more than 25 characters long, be descriptive :)').required('A message is required')
     }),
     handleSubmit(values, { resetForm }) {
-        console.log(values)
         axios({
             method: 'post',
             url: '/.netlify/functions/server',

@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer')
 
-exports.handler = function (event, context, callback) {
+exports.handler = async function (event, context, callback) {
     const message = JSON.parse(event.body)
     console.log(message)
 
@@ -10,7 +10,7 @@ exports.handler = function (event, context, callback) {
         <p>${message.message}</p>
         `
 
-    let transporter = nodemailer.createTransport({
+    let transporter = await nodemailer.createTransport({
         service: "gmail",
         port: 587,
         secure: false,
@@ -23,7 +23,7 @@ exports.handler = function (event, context, callback) {
         }
     })
 
-    transporter.sendMail({
+    await transporter.sendMail({
         from: message.email,
         to: process.env.HOSTEMAIL,
         subject: 'New Client',
