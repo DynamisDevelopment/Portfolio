@@ -41,6 +41,9 @@ const Reviews = () => {
                     <div>
                         <p>"I would most definitely recommend this freelancer to a friend! He was great."</p>
                     </div>
+                    <div>
+                        <p>"Joshua did a great job, well above expectations. As I'd not used Gatsby much, it was not clear to me what was really needed and Joshua went above and beyond to complete the job and do what was necessary, even though I did not completely spec."</p>
+                    </div>
                 </Slider>
             </div>
 
