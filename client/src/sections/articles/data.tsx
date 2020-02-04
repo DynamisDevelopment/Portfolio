@@ -11,7 +11,7 @@ export const articles: Props[] = [
         thumb: '../assets/articles/chakra-ui.jpg',
         title: 'Exploring the Chakra UI React Component Library',
         desc: 'Learn the basics of creating modular, responsive, and accessible components for React using Chakra UI.',
-        quote: "\"I just read this amazing introduction to Chakra UI by Joshua Hall. I can't find you on twitter but I'll like to say \"Thank you\" for this 💖 . Check it out: 👇🏼\" - Segun Adebayo",
+        quote: "\"I just read this amazing introduction to Chakra UI by Joshua Hall. I can't find you on twitter but I'll like to say \"Thank you\" for this 💖 . Check it out: 👇🏼\" - Segun Adebayo (Chakra Lead Dev)",
         link: 'https://alligator.io/react/chakra-ui/'
     }, {
         thumb: '../assets/articles/tina-cms.jpg',

@@ -12,7 +12,7 @@ const Contact = () => {
 
     return (
         <div className='contact' id="Contact">
-            <SectionTitle title={"Contact"} subtitle={'Got something interesting?'} subSubtitle={'Email: devlead@dynamisdevelopment.com'} />
+            <SectionTitle title={"Contact"} subtitle={'Got something interesting?'} email={'devlead@dynamisdevelopment.com'} />
             <FormikForm />
             <div className="social">
                 <a href="https://www.linkedin.com/in/joshua-hall-51b182185/" className="circle" target="_blanck"><img src="../assets/icons/linkedin-logo.svg" alt="Linkedin Logo" /></a>

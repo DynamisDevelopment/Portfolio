@@ -4,10 +4,10 @@ import './SectionTitle.sass'
 interface Props {
     title: string,
     subtitle: string,
-    subSubtitle?: string
+    email?: string
 }
 
-const SectionTitle = ({ title, subtitle, subSubtitle }: Props) => {
+const SectionTitle = ({ title, subtitle, email }: Props) => {
     return (
         <div className='SectionTitle'>
             <div className="title">
@@ -16,7 +16,7 @@ const SectionTitle = ({ title, subtitle, subSubtitle }: Props) => {
                 <div className="line"></div>
             </div>
             <div className="subtitle">{subtitle}</div>
-            {subSubtitle && <div className="subSubtitle">{subSubtitle}</div>}
+            {email && <a href={`mailto:${email}`} className="subSubtitle">Email: {email}</a>}
         </div>
     )
 }
