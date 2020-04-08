@@ -18,7 +18,10 @@ const About = () => {
           other great developers and designers on more interesting projects
           while helping other build their skills.
         </p>
-        <a href="https://www.youtube.com/channel/UC-9kS4cbkpJ91kga-eB-MOA">
+        <a
+          href="https://www.youtube.com/channel/UC-9kS4cbkpJ91kga-eB-MOA"
+          target="_blanck"
+        >
           <button className="btn">Dynamis Development</button>
         </a>
       </div>
