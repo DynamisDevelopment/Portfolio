@@ -20,10 +20,11 @@ export const articles: Props[] = [
         quote: "\"Great write-up! We're testing Tina Teams (editing for non-tech folks) internally right now.\" - TinaCMS",
         link: 'https://alligator.io/gatsbyjs/exploring-tina-cms/'
     }, {
-        thumb: '../assets/articles/mutations-min.jpg',
-        title: 'Mutations and Subscriptions in GraphQL',
-        desc: 'Learn how to set up an advanced GraphQL APIs with Mutations and Subscriptions using the graphql-yoga Node.js library.',
-        link: 'https://alligator.io/graphql/mutations-subscriptions/'
+        thumb: '../assets/articles/binary-heaps.jpg',
+        title: 'Binary Heaps and Priority Queues via JavaScript',
+        desc: 'Learn how to create one of the most common data structures for managing intelligent queues: binary heaps. We\ll use JavaScript to go over the concepts.',
+        quote: "Most read article with over 320K views! 🚀",
+        link: 'https://www.digitalocean.com/community/tutorials/js-binary-heaps'
     }, {
         thumb: '../assets/articles/tailwind-min.jpg',
         title: 'Introduction to Tailwind CSS',

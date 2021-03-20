@@ -45,6 +45,11 @@ const Reviews = () => {
       <div className="reviews">
         <SectionTitle title={"Reviews"} subtitle={""} />
         <Slider {...settings} className="slider">
+        <div>
+          <p>
+            "Josh is a talented, internally motivated frontend engineer who exemplifies strong technical thinking and goal oriented execution. It's been really great working with him. Strongly recommended for anyone who's looking for top notch work and a friendly colleague." - Zack Peng (CEO of Kover.ai)
+          </p>
+        </div>
           <div>
             <p>
               "What a breeze it has been to have been able to work with Joshua!
@@ -61,6 +66,19 @@ const Reviews = () => {
           </div>
           <div>
             <p>
+              "Joshua was a pleasure to work with. He dedicated himself fully to each project I sent him & delivered quality results on time, every time. Would definitely recommend Joshua for any task you've got... he has a wide range of skills and would be an asset to any company." - Laura and Jesse (Founders of DropInBlog)
+            </p>
+          </div>
+          <div>
+            <p>
+              "Joshua did a great job, well above expectations. As I'd not used
+              Gatsby much, it was not clear to me what was really needed and
+              Joshua went above and beyond to complete the job and do what was
+              necessary, even though I did not completely spec."
+            </p>
+          </div>
+          <div>
+            <p>
               "Josh was just perfect to work with. I'm so glad I went with his
               suggestion to use Gatsby over Wordpress Like I originally
               intended. Will definitely like to work with him again in the
@@ -73,18 +91,13 @@ const Reviews = () => {
               was great."
             </p>
           </div>
-          <div>
-            <p>
-              "Joshua did a great job, well above expectations. As I'd not used
-              Gatsby much, it was not clear to me what was really needed and
-              Joshua went above and beyond to complete the job and do what was
-              necessary, even though I did not completely spec."
-            </p>
-          </div>
+          
         </Slider>
       </div>
     </div>
   )
 }
 
+
+// ""
 export { About, Reviews }

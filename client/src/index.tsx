@@ -13,6 +13,7 @@ import { hotjar } from 'react-hotjar'
 import Jumbotron from './sections/jumbotron/Jumbotron'
 import Skills from './sections/skills/Skills'
 import Tools from './sections/tools/Tools'
+import Koverai from './sections/koverai/Koverai'
 import Portfolio from './sections/portfolio/Portfolio'
 import Articles from './sections/articles/Articles'
 import { About, Reviews } from './sections/about/About'
@@ -35,6 +36,7 @@ const HomePage = () => {
             <Waypoint onEnter={() => toggle(!show)} bottomOffset='80%' />
             <Skills />
             <Tools />
+            {/* <Koverai /> */}
             <Portfolio />
             <Reviews />
             <Articles />

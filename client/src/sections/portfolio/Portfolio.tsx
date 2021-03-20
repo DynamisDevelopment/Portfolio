@@ -11,7 +11,7 @@ const Portfolio = () => {
     const reveal = useTrail(projects.length, { to: { opacity: show ? 1 : 0 }, config: config.slow })
     return (
         <div className='center' id="Portfolio">
-            <SectionTitle title={'Portfolio'} subtitle={'Learning projects I\'ve done in the past and some that I\'m currently working on.'} />
+            <SectionTitle title={'Projects'} subtitle={'Learning projects I\'ve done in the past and some that I\'m currently working on.'} />
             <div className="responsive-grid">
                 {reveal.map((animation, i) => <animated.div style={animation} key={i}>
                     <Waypoint onEnter={() => { if (!show) toggle(true) }} bottomOffset='30%' />
