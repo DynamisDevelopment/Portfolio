@@ -28,7 +28,7 @@ export const projects: Props[] = [
     desc:
       "A remarkably clean a easy to use starter harnessing the power of the DropInBlog CMS. The custom source plugin give the user a cleaner method to utilize their data than the standard REST API would have allowed.",
     link: "https://dropinblog-gatsby-starter.netlify.com/",
-    git: "https://github.com/DynamisDevelopment/dib-gatsby-starter",
+    git: "https://github.com/DropInBlog/gatsby-starter-dropinblog",
     designBy: "Myself",
     tech: ["React", "Gatsby", "DropInBlog", "Chakra Ui"],
     complete: true,

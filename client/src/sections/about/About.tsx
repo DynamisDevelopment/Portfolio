@@ -1,15 +1,25 @@
-import React from "react"
+import React, {useState } from "react"
 
 // * Components
 import SectionTitle from "../../components/sectionTitle/SectionTitle"
 import Slider from "react-slick"
+import { videos } from "./data"
+import Video from "../../components/Video/Video"
+import { useTrail, animated, config } from 'react-spring'
+import { Waypoint } from 'react-waypoint'
 
 // * Styles
 import "./About.sass"
 
 const About = () => {
+  const [show, toggle] = useState(false)
+  const reveal = useTrail(videos.length, {
+    to: { opacity: show ? 1 : 0 },
+    config: config.slow
+  })
+
   return (
-    <div id="About">
+    <section id="About">
       <div className="about">
         <SectionTitle title={"About"} subtitle={""} />
         <p>
@@ -18,6 +28,23 @@ const About = () => {
           other great developers and designers on more interesting projects
           while helping other build their skills.
         </p>
+        <div className="responsive-grid">
+          {reveal.map((animation, i) => (
+            <animated.div style={animation} key={i}>
+              <Waypoint
+                onEnter={() => {
+                  if (!show) toggle(true)
+                }}
+                bottomOffset="30%"
+              />
+              <Video
+                title={videos[i].title}
+                desc={videos[i].desc}
+                link={videos[i].link}
+              />
+            </animated.div>
+          ))}
+        </div>
         <a
           href="https://www.youtube.com/channel/UC-9kS4cbkpJ91kga-eB-MOA"
           target="_blanck"
@@ -25,7 +52,7 @@ const About = () => {
           <button className="btn">Dynamis Development</button>
         </a>
       </div>
-    </div>
+    </section>
   )
 }
 
@@ -41,7 +68,7 @@ const Reviews = () => {
   }
 
   return (
-    <div id="About">
+    <section id="About">
       <div className="reviews">
         <SectionTitle title={"Reviews"} subtitle={""} />
         <Slider {...settings} className="slider">
@@ -94,7 +121,7 @@ const Reviews = () => {
           
         </Slider>
       </div>
-    </div>
+    </section>
   )
 }
 

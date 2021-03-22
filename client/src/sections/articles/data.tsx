@@ -26,10 +26,10 @@ export const articles: Props[] = [
         quote: "Most read article with over 320K views! 🚀",
         link: 'https://www.digitalocean.com/community/tutorials/js-binary-heaps'
     }, {
-        thumb: '../assets/articles/tailwind-min.jpg',
-        title: 'Introduction to Tailwind CSS',
-        desc: 'Explore Tailwind CSS, a popular utility-based CSS library that\'s easy to learn, customizable and responsive.',
-        link: 'https://alligator.io/css/tailwind-css/'
+        thumb: '../assets/articles/intro-to-graphs.jpg',
+        title: 'Intro to Graphs',
+        desc: 'Get a birds-eye-view of the most common and useful data structures out there, graphs.',
+        link: 'https://developer.school/intro-to-graphs/'
     }, {
         thumb: '../assets/articles/docker-compose.jpg',
         title: 'Working with Multiple Containers Using Docker Compose',

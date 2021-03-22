@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Koverai.sass'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 
