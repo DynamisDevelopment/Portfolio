@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 466 347" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-46,-85)">
+        <g>
+            <path d="M511.958,251.643C490.099,278.267 447.268,276.188 447.268,276.188C420.853,389.988 261.328,447.907 150.569,419.454C39.821,391.011 55.056,258.915 55.056,258.915L379.194,258.915C405.943,258.915 407.981,250.786 407.981,250.786C384.272,194.56 420.854,164.415 420.854,164.415C449.307,169.504 456.412,218.269 456.412,218.269C479.765,214.079 498.521,219.063 509.994,223.859C511.143,232.981 511.812,242.249 511.958,251.643Z" style="fill:white;fill-rule:nonzero;"/>
+            <rect x="89.6" y="207.433" width="45.39" height="41.32" style="fill:white;"/>
+            <rect x="146.641" y="207.433" width="45.39" height="41.32" style="fill:white;"/>
+            <rect x="317.743" y="207.433" width="45.39" height="41.32" style="fill:white;"/>
+            <rect x="260.712" y="207.433" width="45.39" height="41.32" style="fill:white;"/>
+            <rect x="260.712" y="101.763" width="45.39" height="41.32" style="fill:white;"/>
+            <rect x="203.671" y="207.433" width="45.39" height="41.32" style="fill:white;"/>
+            <rect x="146.641" y="154.593" width="45.39" height="41.32" style="fill:white;"/>
+            <rect x="260.712" y="154.593" width="45.39" height="41.32" style="fill:white;"/>
+            <rect x="203.671" y="154.593" width="45.39" height="41.32" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

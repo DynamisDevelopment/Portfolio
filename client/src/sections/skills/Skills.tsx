@@ -4,21 +4,21 @@ import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import Skill, { Props } from '../../components/Skill/Skill'
 
 const skills: Props[] = [{
-    icon: '../assets/icons/design.svg',
-    title: 'Web Design',
-    text: 'I work with the best designers to create efficient and engaging web experiences with the focus on user and business needs.'
-}, {
-    icon: '../assets/icons/development.svg',
-    title: 'Web Development',
+    icon: '../assets/icons/frontend.svg',
+    title: 'Front End & Mobile',
     text: 'Quick, clean, and maintanable solutions using the latest technology and best practices.'
 }, {
-    icon: '../assets/icons/mobile.svg',
-    title: 'Mobile Development',
-    text: 'I use Flutter and React Native to create dynamic and scalable apps once for Android and IOS.'
+    icon: '../assets/icons/backend.svg',
+    title: 'Back End & DevOps',
+    text: 'Quick, clean, and maintanable solutions using the latest technology and best practices.'
+}, {
+    icon: '../assets/icons/blockchain.svg',
+    title: 'Blockchain',
+    text: 'With a wide understanding of of crypto from the innerworkings to Dapp devlepement.'
 }, {
     icon: '../assets/icons/testing.svg',
-    title: 'Testing and Maintenance',
-    text: 'Looking for long-term partnerships to continuously update and improve your site.'
+    title: 'Test Driven Development',
+    text: 'Using a TDD approach and best practices I can write clean, maintainable, code from start to finish.'
 }]
 
 const Skills = () => {
