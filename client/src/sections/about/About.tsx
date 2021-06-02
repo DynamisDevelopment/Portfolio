@@ -1,4 +1,4 @@
-import React, {useState } from "react"
+import React, { useState } from "react"
 
 // * Components
 import SectionTitle from "../../components/sectionTitle/SectionTitle"
@@ -72,11 +72,11 @@ const Reviews = () => {
       <div className="reviews">
         <SectionTitle title={"Reviews"} subtitle={""} />
         <Slider {...settings} className="slider">
-        <div>
-          <p>
-            "Josh is a talented, internally motivated frontend engineer who exemplifies strong technical thinking and goal oriented execution. It's been really great working with him. Strongly recommended for anyone who's looking for top notch work and a friendly colleague." - Zack Peng (CEO of Kover.ai)
+          <div>
+            <p>
+              "Josh is a talented, internally motivated frontend engineer who exemplifies strong technical thinking and goal oriented execution. It's been really great working with him. Strongly recommended for anyone who's looking for top notch work and a friendly colleague." - Zack Peng (CEO of Kover.ai)
           </p>
-        </div>
+          </div>
           <div>
             <p>
               "What a breeze it has been to have been able to work with Joshua!
@@ -118,7 +118,7 @@ const Reviews = () => {
               was great."
             </p>
           </div>
-          
+
         </Slider>
       </div>
     </section>
