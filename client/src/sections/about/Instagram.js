@@ -18,11 +18,11 @@ const Instagram = () => {
 
     return <Suspense fallback={<div />}>
         {posts && <div className="ig-posts">
-            <div className="responsive-grid">
+            <div className="ig-grid">
                 {posts.map((post, i) => <div className="ig-post" key={i}>
                     <img src="../assets/icons/instagram.svg" alt="Instagram" className="ig-logo" />
                     <img src={post.media_url} alt={post.caption} className="ig-post-img" />
-                    <h1>{post.caption}</h1>
+                    <h3>{post.caption}</h3>
                 </div>)}
 
             </div>
