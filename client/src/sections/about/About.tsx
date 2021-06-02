@@ -1,4 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, lazy } from "react"
+
+// * Styles
+import "./About.sass"
 
 // * Components
 import SectionTitle from "../../components/sectionTitle/SectionTitle"
@@ -7,9 +10,7 @@ import { videos } from "./data"
 import Video from "../../components/Video/Video"
 import { useTrail, animated, config } from 'react-spring'
 import { Waypoint } from 'react-waypoint'
-
-// * Styles
-import "./About.sass"
+import Instagram from "./Instagram"
 
 const About = () => {
   const [show, toggle] = useState(false)
@@ -51,6 +52,8 @@ const About = () => {
         >
           <button className="btn">Dynamis Development</button>
         </a>
+
+        <Instagram />
       </div>
     </section>
   )
