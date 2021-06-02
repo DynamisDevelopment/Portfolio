@@ -23,7 +23,7 @@ export const articles: Props[] = [
         thumb: '../assets/articles/binary-heaps.jpg',
         title: 'Binary Heaps and Priority Queues via JavaScript',
         desc: 'Learn how to create one of the most common data structures for managing intelligent queues: binary heaps. We\ll use JavaScript to go over the concepts.',
-        quote: "Most read article with over 320K views! 🚀",
+        quote: "Most read article with over 340K views! 🚀",
         link: 'https://www.digitalocean.com/community/tutorials/js-binary-heaps'
     }, {
         thumb: '../assets/articles/intro-to-graphs.jpg',

@@ -6,15 +6,15 @@ import Skill, { Props } from '../../components/Skill/Skill'
 const skills: Props[] = [{
     icon: '../assets/icons/frontend.svg',
     title: 'Front End & Mobile',
-    text: 'Quick, clean, and maintanable solutions using the latest technology and best practices.'
+    text: 'Quick, clean, and maintanable solutions using the latest best practices to minimize bloat and keep things DRY.'
 }, {
     icon: '../assets/icons/backend.svg',
     title: 'Back End & DevOps',
-    text: 'Quick, clean, and maintanable solutions using the latest technology and best practices.'
+    text: 'Whether it be routing, architecture, or database management I can work with large teams to figure out almost anything.'
 }, {
     icon: '../assets/icons/blockchain.svg',
     title: 'Blockchain',
-    text: 'With a wide understanding of of crypto from the innerworkings to Dapp devlepement.'
+    text: 'With a wide understanding of of crypto from the innerworkings to Dapp development.'
 }, {
     icon: '../assets/icons/testing.svg',
     title: 'Test Driven Development',

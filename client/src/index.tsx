@@ -28,7 +28,7 @@ const HomePage = () => {
             <Helmet>
                 <title>Joshua Hall - Web Extraordinaire</title>
                 <link rel="icon" href="../assets/icons/dynamis-logo.ico" sizes="16x16" />
-                <meta charSet="utf-8" name="description" content="A freelance fullstack web and mobile app developer." />
+                <meta charSet="utf-8" name="description" content="A freelance fullstack web and blockchain developer." />
             </Helmet>
             <Jumbotron />
             {/* // @ts-ignore */}
