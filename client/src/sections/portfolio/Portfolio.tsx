@@ -2,29 +2,70 @@ import React, { useState } from 'react'
 import './Portfolio.sass'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import Project from '../../components/Project/Project'
-import { projects } from './data'
+import { frontend, backend, defi } from './data'
 import { useTrail, animated, config } from 'react-spring'
 import { Waypoint } from 'react-waypoint'
 
 const Portfolio = () => {
-    const [show, toggle] = useState(false)
-    const reveal = useTrail(projects.length, { to: { opacity: show ? 1 : 0 }, config: config.slow })
+    const [showFE, toggleFE] = useState(false)
+    const revealFE = useTrail(frontend.length, { to: { opacity: showFE ? 1 : 0 }, config: config.slow })
+
+    const [showBE, toggleBE] = useState(false)
+    const revealBE = useTrail(backend.length, { to: { opacity: showBE ? 1 : 0 }, config: config.slow })
+
+    const [showDE, toggleDE] = useState(false)
+    const revealDE = useTrail(defi.length, { to: { opacity: showDE ? 1 : 0 }, config: config.slow })
     return (
         <div className='center' id="Portfolio">
-            <SectionTitle title={'Projects'} subtitle={'Learning projects I\'ve done in the past and some that I\'m currently working on.'} />
+            <SectionTitle title={'FrontEnd'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} />
             <div className="responsive-grid">
-                {reveal.map((animation, i) => <animated.div style={animation} key={i}>
-                    <Waypoint onEnter={() => { if (!show) toggle(true) }} bottomOffset='30%' />
+                {revealFE.map((animation, i) => <animated.div style={animation} key={i}>
+                    <Waypoint onEnter={() => { if (!showFE) toggleFE(true) }} bottomOffset='30%' />
                     <Project
-                        image={projects[i].image}
-                        name={projects[i].name}
-                        desc={projects[i].desc}
-                        link={projects[i].link}
-                        git={projects[i].git}
-                        tech={projects[i].tech}
-                        designBy={projects[i].designBy}
-                        complete={projects[i].complete}
-                        id={projects[i].id} />
+                        image={frontend[i].image}
+                        name={frontend[i].name}
+                        desc={frontend[i].desc}
+                        link={frontend[i].link}
+                        git={frontend[i].git}
+                        tech={frontend[i].tech}
+                        designBy={frontend[i].designBy}
+                        complete={frontend[i].complete}
+                        id={frontend[i].id} />
+                </animated.div>)}
+            </div>
+            <button className="btn">See More</button>
+
+            <SectionTitle title={'BackEnd'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} noLine />
+            <div className="responsive-grid">
+                {revealBE.map((animation, i) => <animated.div style={animation} key={i}>
+                    <Waypoint onEnter={() => { if (!showBE) toggleBE(true) }} bottomOffset='30%' />
+                    <Project
+                        image={backend[i].image}
+                        name={backend[i].name}
+                        desc={backend[i].desc}
+                        link={backend[i].link}
+                        git={backend[i].git}
+                        tech={backend[i].tech}
+                        designBy={backend[i].designBy}
+                        complete={backend[i].complete}
+                        id={backend[i].id} />
+                </animated.div>)}
+            </div>
+
+            <SectionTitle title={'Crypto and Defi'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} noLine />
+            <div className="responsive-grid">
+                {revealDE.map((animation, i) => <animated.div style={animation} key={i}>
+                    <Waypoint onEnter={() => { if (!showDE) toggleDE(true) }} bottomOffset='30%' />
+                    <Project
+                        image={defi[i].image}
+                        name={defi[i].name}
+                        desc={defi[i].desc}
+                        link={defi[i].link}
+                        git={defi[i].git}
+                        tech={defi[i].tech}
+                        designBy={defi[i].designBy}
+                        complete={defi[i].complete}
+                        id={defi[i].id} />
                 </animated.div>)}
             </div>
         </div>

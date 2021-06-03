@@ -4,16 +4,17 @@ import './SectionTitle.sass'
 interface Props {
     title: string,
     subtitle: string,
-    email?: string
+    email?: string,
+    noLine?: boolean
 }
 
-const SectionTitle = ({ title, subtitle, email }: Props) => {
+const SectionTitle = ({ title, subtitle, email, noLine }: Props) => {
     return (
         <div className='SectionTitle'>
             <div className="title">
-                <div className="line"></div>
+                {!noLine && <div className="line"></div>}
                 <h1>{title}</h1>
-                <div className="line"></div>
+                {!noLine && <div className="line"></div>}
             </div>
             <div className="subtitle">{subtitle}</div>
             {email && <a href={`mailto:${email}`} className="subSubtitle">Email: {email}</a>}

@@ -53,6 +53,7 @@ const About = () => {
           <button className="btn">Dynamis Development</button>
         </a>
 
+        <div className="subtitle" style={{ maxWidth: "500px" }}>I have recently taken a interest in building VR games and 3D modelling.</div>
         <Instagram />
       </div>
     </section>

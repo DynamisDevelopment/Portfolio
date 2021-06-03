@@ -47,9 +47,9 @@ const Project = (props: Props) => {
             </div>
             {!props.complete && <p className='not-complete'>-- Work in Progress --</p>}
 
-            <Modal isOpen={isOpen} onClose={onClose} isCentered>
+            <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
                 <ModalOverlay />
-                <ModalContent color='white'>
+                <ModalContent color='white' minH="500px">
                     <ModalHeader fontSize={'3xl'}> {props.name} </ModalHeader>
                     <ModalCloseButton color={'purple.500'} size={'lg'} />
                     <ModalBody fontSize={'1.25em'}> {props.desc} </ModalBody>
