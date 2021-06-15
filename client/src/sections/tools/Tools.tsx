@@ -26,8 +26,8 @@ const FE: Props[] = [
         image: '../assets/icons/threejs-logo.svg',
         name: 'Three JS'
     }, {
-        image: '../assets/icons/threejs-logo.svg',
-        name: 'Three JS'
+        image: '../assets/icons/typescript-logo.svg',
+        name: 'Typescript'
     },
 ]
 
