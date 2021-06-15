@@ -80,7 +80,7 @@ const Tools = () => {
     return (
         <section className='bg center'>
             <SectionTitle title={'Tech'} subtitle={'I can figure out pretty much anything, but these are what I\'m the most confident with.'} />
-            <div className="responsive-grid">
+            <div className="three-item-grid">
                 <div className="tools pentagon">{FE.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
                 <div className="tools pentagon">{BE.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
                 <div className="tools pentagon">{Crypto.map((tool, index) => <Tool image={tool.image} name={tool.name} key={index} />)}</div>
