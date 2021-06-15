@@ -30,10 +30,9 @@ const Portfolio = () => {
                         tech={frontend[i].tech}
                         designBy={frontend[i].designBy}
                         complete={frontend[i].complete}
-                        id={frontend[i].id} />
+                        id={i} />
                 </animated.div>)}
             </div>
-            <button className="btn">See More</button>
 
             <SectionTitle title={'BackEnd'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} noLine />
             <div className="responsive-grid">
@@ -48,7 +47,7 @@ const Portfolio = () => {
                         tech={backend[i].tech}
                         designBy={backend[i].designBy}
                         complete={backend[i].complete}
-                        id={backend[i].id} />
+                        id={i} />
                 </animated.div>)}
             </div>
 
@@ -65,7 +64,7 @@ const Portfolio = () => {
                         tech={defi[i].tech}
                         designBy={defi[i].designBy}
                         complete={defi[i].complete}
-                        id={defi[i].id} />
+                        id={i} />
                 </animated.div>)}
             </div>
         </div>

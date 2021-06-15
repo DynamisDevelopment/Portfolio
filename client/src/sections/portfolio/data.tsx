@@ -12,6 +12,39 @@ export interface Props {
 
 export const frontend: Props[] = [
   {
+    image: "../assets/projects/kover.jpg",
+    name: "Kover AI",
+    desc:
+      "Blog and portfolio site for a German architectural and interior design company.",
+    link: "https://bauwerk.netlify.com/",
+    git: "https://github.com/DynamisDevelopment/Bauwerk",
+    tech: ["VanillaJS", "Tailwind CSS"],
+    complete: true,
+    id: 1
+  },
+  {
+    image: "../assets/projects/gridwise.jpg",
+    name: "Gridwise Plugin",
+    desc:
+      "Blog and portfolio site for a German architectural and interior design company.",
+    link: "https://bauwerk.netlify.com/",
+    git: "https://github.com/DynamisDevelopment/Bauwerk",
+    tech: ["VanillaJS", "Tailwind CSS"],
+    complete: true,
+    id: 3
+  },
+  {
+    image: "../assets/projects/kover-v4.jpg",
+    name: "Kover AI V4",
+    desc:
+      "Blog and portfolio site for a German architectural and interior design company.",
+    link: "https://bauwerk.netlify.com/",
+    git: "https://github.com/DynamisDevelopment/Bauwerk",
+    tech: ["VanillaJS", "Tailwind CSS"],
+    complete: true,
+    id: 1
+  },
+  {
     image: "../assets/projects/bauwerk.jpg",
     name: "Bauwerk",
     desc:
@@ -23,6 +56,7 @@ export const frontend: Props[] = [
     complete: true,
     id: 1
   },
+
   {
     image: "../assets/projects/dropInBlog.png",
     name: "DropInBlog Gatsby Starter and Source Plugin",
@@ -35,25 +69,13 @@ export const frontend: Props[] = [
     complete: true,
     id: 2
   },
-  {
-    image: "../assets/projects/gridwise.jpg",
-    name: "Gridwise Plugin",
-    desc:
-      "Blog and portfolio site for a German architectural and interior design company.",
-    link: "https://bauwerk.netlify.com/",
-    git: "https://github.com/DynamisDevelopment/Bauwerk",
-    tech: ["VanillaJS", "Tailwind CSS"],
-    complete: true,
-    id: 1
-  },
-
 ]
 
 
 export const backend: Props[] = [
   {
-    image: "../assets/projects/bauwerk.jpg",
-    name: "Bauwerk",
+    image: "../assets/projects/molla.jpg",
+    name: "Molla",
     desc:
       "Blog and portfolio site for a German architectural and interior design company.",
     link: "https://bauwerk.netlify.com/",
@@ -64,8 +86,8 @@ export const backend: Props[] = [
     id: 1
   },
   {
-    image: "../assets/projects/dropInBlog.png",
-    name: "DropInBlog Gatsby Starter and Source Plugin",
+    image: "../assets/projects/tinker.jpg",
+    name: "Tinker",
     desc:
       "A remarkably clean a easy to use starter harnessing the power of the DropInBlog CMS. The custom source plugin give the user a cleaner method to utilize their data than the standard REST API would have allowed.",
     link: "https://dropinblog-gatsby-starter.netlify.com/",

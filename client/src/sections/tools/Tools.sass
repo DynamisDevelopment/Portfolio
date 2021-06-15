@@ -1,18 +1,28 @@
 @import '../../global.sass'
 
-.tools 
-    // Layout
-    display: flex 
-    justify-content: space-around
-    align-items: center
-    flex-wrap: wrap
-    margin: 30px 0 30px 0
-    padding: 0 10vw 30px 10vw
-    @extend .lg-mx-32
-.toolsTwo 
-    // Layout
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
-    .tool 
-        @extend .mx-10
+// .tools
+//     // Layout
+//     display: flex
+//     justify-content: space-around
+//     align-items: center
+//     flex-wrap: wrap
+//     margin: 30px 0 30px 0
+//     padding: 0 10vw 30px 10vw
+//     @extend .lg-mx-32
+// .toolsTwo
+//     // Layout
+//     display: flex
+//     justify-content: center
+//     flex-wrap: wrap
+//     // .tool
+//     //     @extend .mx-10
+
+.pentagon
+    //* Layout 
+    width: 100%
+    max-width: 350px
+    height: 375px
+    display: grid
+    grid-template-columns: repeat(3, auto)
+    grid-template-rows: repeat(3, auto)
+    justify-items: center
