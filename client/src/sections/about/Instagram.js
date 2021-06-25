@@ -13,6 +13,7 @@ const Instagram = () => {
         const res = await axios.get(url).catch(err => console.log(err))
 
         setPosts(res.data.data)
+        console.log(res.data.data)
     }
 
     useEffect(() => getPosts(), [])
@@ -39,6 +40,9 @@ const Instagram = () => {
 
                     {post.media_type === "IMAGE" && <a href={post.permalink} target="__blanck">
                         <img src={post.media_url} alt={post.caption} className="ig-post-img" />
+                    </a>}
+                    {post.media_type === "VIDEO" && <a href={post.permalink} target="__blanck">
+                        <video src={post.media_url} title={post.caption} className="ig-post-img" autoPlay></video>
                     </a>}
                     <h3>{truncate(post.caption)}</h3>
                 </div>)}
