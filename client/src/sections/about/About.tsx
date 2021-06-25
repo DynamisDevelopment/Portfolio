@@ -53,10 +53,18 @@ const About = () => {
           <button className="btn">Dynamis Development</button>
         </a>
 
+        <div className="subtitle" style={{ maxWidth: "500px" }}>Recent Pens</div>
+
+        <div className="responsive-grid">
+          <iframe className='pen' scrolling="no" width="100%" title="Sine Waves" src="https://codepen.io/dynamisdevelopment/embed/rXpbyq?defaultTab=result&theme-id=dark"></iframe>
+          <iframe className='pen' scrolling="no" width="100%" title="Star Shower" src="https://codepen.io/dynamisdevelopment/embed/BXmvLd?defaultTab=result&theme-id=dark"></iframe>
+        </div>
+
         <div className="subtitle" style={{ maxWidth: "500px" }}>I have recently taken a interest in building VR games, 3D modelling, and leather working.</div>
         <Instagram />
-      </div>
-    </section>
+
+      </div >
+    </section >
   )
 }
 
@@ -79,7 +87,7 @@ const Reviews = () => {
           <div>
             <p>
               "Josh is a talented, internally motivated frontend engineer who exemplifies strong technical thinking and goal oriented execution. It's been really great working with him. Strongly recommended for anyone who's looking for top notch work and a friendly colleague." - Zack Peng (CEO of Kover.ai)
-          </p>
+            </p>
           </div>
           <div>
             <p>
