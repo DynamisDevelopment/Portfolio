@@ -49,9 +49,9 @@ const Project = (props: Props) => {
 
             <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
                 <ModalOverlay />
-                <ModalContent color='white' minH="500px">
+                <ModalContent color='white' minH="500px" style={{ borderRadius: "10px" }}>
                     <ModalHeader fontSize={'3xl'}> {props.name} </ModalHeader>
-                    <ModalCloseButton color={'purple.500'} size={'lg'} />
+                    <ModalCloseButton color={'white'} size={'lg'} style={{ boxShadow: "none", outline: 0 }} />
                     <ModalBody fontSize={'1.25em'}> {props.desc} </ModalBody>
 
                     <ModalFooter className='more-links'>
