@@ -102,6 +102,30 @@ export const backend: Props[] = [
 
 export const defi: Props[] = [
   {
+    image: "../assets/projects/molla.jpg",
+    name: "Molla",
+    desc:
+      "Blog and portfolio site for a German architectural and interior design company.",
+    link: "https://bauwerk.netlify.com/",
+    git: "https://github.com/DynamisDevelopment/Bauwerk",
+    designBy: "itimasthemes",
+    tech: ["React", "Gatsby", "Contentful"],
+    complete: true,
+    id: 1
+  },
+  {
+    image: "../assets/projects/tinker.jpg",
+    name: "Tinker",
+    desc:
+      "A remarkably clean a easy to use starter harnessing the power of the DropInBlog CMS. The custom source plugin give the user a cleaner method to utilize their data than the standard REST API would have allowed.",
+    link: "https://dropinblog-gatsby-starter.netlify.com/",
+    git: "https://github.com/DropInBlog/gatsby-starter-dropinblog",
+    designBy: "Myself",
+    tech: ["React", "Gatsby", "DropInBlog", "Chakra Ui"],
+    complete: true,
+    id: 2
+  },
+  {
     image: "../assets/projects/bauwerk.jpg",
     name: "Bauwerk",
     desc:

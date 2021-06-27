@@ -53,7 +53,8 @@ const About = () => {
           <button className="btn">Dynamis Development</button>
         </a>
 
-        <div className="subtitle" style={{ maxWidth: "500px" }}>Recent Pens</div>
+        <div className="mt-12" />
+        <SectionTitle title={"Recent Side Projects"} subtitle={""} />
 
         <div className="responsive-grid">
           <iframe className='pen' scrolling="no" width="100%" title="Sine Waves" src="https://codepen.io/dynamisdevelopment/embed/rXpbyq?defaultTab=result&theme-id=dark"></iframe>
