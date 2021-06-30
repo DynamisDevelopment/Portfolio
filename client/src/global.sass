@@ -2,47 +2,57 @@
 
 $shadow: 0 5px 10px rgba(120, 48, 252, .2)
 
-html 
+html
     scroll-behavior: smooth
-    
-body 
-    overflow-x: hidden 
+
+body
+    overflow-x: hidden
     // Typography
     @extend .font-sans
-    
-::-webkit-scrollbar 
+
+::-webkit-scrollbar
     display: none
 
-.center 
+.center
     // Layout
-    display: flex 
-    flex-direction: column 
+    display: flex
+    flex-direction: column
     align-items: center
 
-.responsive-grid 
+.responsive-grid
     // Layout
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
     justify-items: center
-    grid-gap: 15px 
-    margin: 60px 0 60px 0 
-    @extend .container 
+    grid-gap: 15px
+    margin: 60px 0 60px 0
+    @extend .container
 
-.card, 
+.three-item-grid
+    // Layout
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    margin: 60px 0 60px 0
+    @extend .container
+
+.card,
     // Layout
     width: 100% // Height will be decided per component
-    img, .details  
+    max-width: 400px
+    img, .details
         // Layout
         width: 100%
         min-width: 320px
         border-radius: 5%
 
-.gradient-bg 
+.gradient-bg
     // Misc Styling
     background: rgb(164,48,252)
     background: linear-gradient(to top, rgba(164,48,252,0.7035189075630253) 14%, rgba(120,48,252,1) 100%)
 
-.btn  
+.btn
     // Layout
     width: 300px
     height: 50px
@@ -56,7 +66,7 @@ body
     border: 2px solid rgba(120, 48, 252, .8)
     border-radius: 50px
     box-shadow: $shadow
-    &:hover 
+    &:hover
         // Misc Styling
         color: #fff
         @extend .gradient-bg
@@ -64,11 +74,11 @@ body
         // Animation
         transition: .2s ease-in-out
 
-.circle 
+.circle
     // Layout
-    display: flex 
+    display: flex
     justify-content: space-around
-    align-items: center 
+    align-items: center
     height: 50px
     width: 50px
     border-radius: 50%
@@ -80,6 +90,6 @@ body
 
     // Animation
     transition: 1s ease-in-out
-    &:hover 
+    &:hover
         // Misc Styling
         @extend .gradient-bg

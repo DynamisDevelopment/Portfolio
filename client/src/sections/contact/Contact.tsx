@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="social">
         <App link="https://www.linkedin.com/in/joshua-hall-51b182185/" icon="../assets/icons/linkedin-logo.svg" />
         <App link="https://www.upwork.com/o/profiles/users/_~013e4465c7ba054054/" icon="../assets/icons/upwork-logo.svg" />
-        <App link="https://codepen.io/dynamisdevelopment" icon="../assets/icons/linkedin-logo.svg" />
+        <App link="https://codepen.io/dynamisdevelopment" icon="../assets/icons/codepen-logo.svg" />
         <App link="https://github.com/DynamisDevelopment" icon="../assets/icons/github-logo.svg" />
         <App link="https://hub.docker.com/u/dynamisdevelopment" icon="../assets/icons/docker-logo-white.svg" />
       </div>
