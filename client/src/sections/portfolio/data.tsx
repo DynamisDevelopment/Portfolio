@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 export interface Props {
   image: string
   name: string
@@ -10,54 +12,63 @@ export interface Props {
   id: number
 }
 
+const createLink = (name, link?) => `<a href="https://gig.kover.ai/${link ? link : name.toLowerCase()}" target="_${name}" class="grid-links-link">${name.replace("_", " ")}</a>`
+
 export const frontend: Props[] = [
   {
     image: "../assets/projects/kover.jpg",
     name: "Kover AI",
     desc:
-      "Blog and portfolio site for a German architectural and interior design company.",
-    link: "https://bauwerk.netlify.com/",
-    git: "https://github.com/DynamisDevelopment/Bauwerk",
-    tech: ["VanillaJS", "Tailwind CSS"],
+      `I worked as the lead frontend dev at kover for over a year, creating all the pages, dashboards, and a few side projects. 
+      <div class="grid-links">
+        ${createLink("Wonolo")}
+        ${createLink("Driver")}
+        ${createLink("Jobble")}
+        ${createLink("Affiliate")}
+        ${createLink("Survey", "wonolo_survey")}
+        ${createLink("Hyrecar")}
+        ${createLink("DoordashDiaries")}
+        ${createLink("SaferideAmerica")}
+        ${createLink("CitizenShipper")}
+      </div>`,
+    link: "https://gig.kover.ai/",
+    tech: ["React", "Chakra UI", "Sass"],
     complete: true,
     id: 1
+   
   },
   {
     image: "../assets/projects/gridwise.jpg",
     name: "Gridwise Plugin",
     desc:
-      "Blog and portfolio site for a German architectural and interior design company.",
-    link: "https://bauwerk.netlify.com/",
-    git: "https://github.com/DynamisDevelopment/Bauwerk",
+      "With Kovers' partnership with Gridwise I created the popup plugin module that helps integrate users between their services.",
+    link: "https://gridwise.io/protection",
     tech: ["VanillaJS", "Tailwind CSS"],
     complete: true,
-    id: 3
+    id: 2
   },
-  {
-    image: "../assets/projects/kover-v4.jpg",
-    name: "Kover AI V4",
-    desc:
-      "Blog and portfolio site for a German architectural and interior design company.",
-    link: "https://bauwerk.netlify.com/",
-    git: "https://github.com/DynamisDevelopment/Bauwerk",
-    tech: ["VanillaJS", "Tailwind CSS"],
-    complete: true,
-    id: 1
-  },
+  // {
+  //   image: "../assets/projects/kover-v4.jpg",
+  //   name: "Kover AI V4",
+  //   desc:
+  //     "Before changing directions to a B2B2C structure I built a full redesign of the sight, which was sadly never implemented 🤷‍♂. Nevertheless, I'm proud of it.",
+  //   link: "https://bauwerk.netlify.com/",
+  //   tech: ["React", "Chakra UI", "Sass"],
+  //   complete: true,
+  //   id: 3
+  // },
   {
     image: "../assets/projects/bauwerk.jpg",
     name: "Bauwerk",
     desc:
-      "Blog and portfolio site for a German architectural and interior design company.",
+      "A statically generated Blog and portfolio site for a German architectural and interior design company.",
     link: "https://bauwerk.netlify.com/",
     git: "https://github.com/DynamisDevelopment/Bauwerk",
     designBy: "itimasthemes",
     tech: ["React", "Gatsby", "Contentful"],
     complete: true,
-    id: 1
-  },
-
-  {
+    id: 4
+  }, {
     image: "../assets/projects/dropInBlog.png",
     name: "DropInBlog Gatsby Starter and Source Plugin",
     desc:
@@ -67,7 +78,7 @@ export const frontend: Props[] = [
     designBy: "Myself",
     tech: ["React", "Gatsby", "DropInBlog", "Chakra Ui"],
     complete: true,
-    id: 2
+    id: 5
   },
 ]
 

@@ -51,7 +51,7 @@ const Portfolio = () => {
                 </animated.div>)}
             </div> */}
 
-            <SectionTitle title={'Crypto and Backend'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} noLine />
+            {/* <SectionTitle title={'Crypto and Backend'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} noLine />
             <div className="responsive-grid">
                 {revealDE.map((animation, i) => <animated.div style={animation} key={i}>
                     <Waypoint onEnter={() => { if (!showDE) toggleDE(true) }} bottomOffset='30%' />
@@ -66,7 +66,7 @@ const Portfolio = () => {
                         complete={defi[i].complete}
                         id={i} />
                 </animated.div>)}
-            </div>
+            </div> */}
         </div>
     )
 }

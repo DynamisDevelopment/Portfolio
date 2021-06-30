@@ -1,2 +1,19 @@
 @import '../../global.sass'
 
+.grid-links
+    //* Layout
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr))
+    justify-items: center
+    padding-top: 10px
+    margin-top: 15px
+
+    //* Misc Styling
+    border-top: 2px solid white
+    &-link
+        //* Layout
+        margin-top: 5px
+
+        //* Misc Styling
+        color: #f1fc53
