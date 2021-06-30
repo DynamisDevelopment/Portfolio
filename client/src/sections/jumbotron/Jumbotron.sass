@@ -1,10 +1,10 @@
 @import '../../global.sass'
 
-.jumbotron-bg 
+.jumbotron-bg
     // Layout
     height: 90vh
-    display: flex 
-    flex-direction: column 
+    display: flex
+    flex-direction: column
     justify-content: center
     border-bottom-left-radius: 50% 8%
     border-bottom-right-radius: 50% 8%
@@ -12,25 +12,25 @@
     @extend .sm-items-center, .md-items-start
 
     // Typography
-    text-align: center  
+    text-align: center
     color: #fff
 
     background-image: url('../../assets/space-bg.svg')
     background-repeat: no-repeat
     background-position: center right
     background-size: cover
-    .content 
+    .content
         // Layout
         @extend .center
         @extend .md-ml-12, .lg-ml-32
-        .title 
+        .title
             // Layout
             @extend .sm-max-w-xs, .md-max-w-full
-        
+
             // Typography
             font-weight: 600
             @extend .text-5xl
-        .subtitle 
+        .subtitle
             // Layout
             width: 90%
             @extend .sm-w-auto, .md-max-w-md
@@ -39,10 +39,9 @@
             @extend .text-lg
 
 @media screen and (max-width: 650px)
-    .jumbotron-bg 
+    .jumbotron-bg
         border-bottom-left-radius: 0
         border-bottom-right-radius: 0
-    .content .title 
+    .content .title
         // Layout
         width: 50%
-
