@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: joshua-hall.dev
+Token: 4764cf988d8c724b6b65062a180375761af073226d758e60772d899c6cbe99f5
