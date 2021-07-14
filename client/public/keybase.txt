@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/dynamisdev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://joshua-hall.dev
+  * I am dynamisdev (https://keybase.io/dynamisdev) on keybase.
+  * I have a public key ASBNWqbQcLG-hQ5DNKbmnpS7mHIE44MLH7fRCVkwHJ6N-wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012063f345fdb222aa84aacd0d02f2652922aaff3eb785db815ff88b4c438f6df7340a",
+      "host": "keybase.io",
+      "kid": "01204d5aa6d070b1be850e4334a6e69e94bb987204e3830b1fb7d10959301c9e8dfb0a",
+      "uid": "72c4fb0586bb3ac1cf7cb74e94c34e19",
+      "username": "dynamisdev"
+    },
+    "merkle_root": {
+      "ctime": 1626243474,
+      "hash": "3c9a6c42542f3a1b640be8e18c357467a74fe97e0fdcd15e91d4527ea8ea3167d6025ac856e605988ceea93305e6ab7ba21f8d1a8a809e2c02215ea8f2a5a30d",
+      "hash_meta": "70f1a5657db5d0750386d24893a55fa13ecc6cb807036e28c2be9a44cb16356a",
+      "seqno": 20372918
+    },
+    "service": {
+      "entropy": "VCmNU+We/YZSXcT62r6Ij8Db",
+      "hostname": "joshua-hall.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.0"
+  },
+  "ctime": 1626243545,
+  "expire_in": 504576000,
+  "prev": "2fc1bbf8ec40d3b24493d6baf8e82bf6ba193fd5324185a5800daccafde572e9",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTVqm0HCxvoUOQzSm5p6Uu5hyBOODCx+30QlZMByejfsKp3BheWxvYWTESpcCFMQgL8G7+OxA07JEk9a6+Ogr9roZP9UyQYWlgA2syv3lcunEILPSHYfy825imrZF9D71vEN+ybQnb6NbD1fb77tNkl4sAgHCo3NpZ8RAzrFxXF+Xn3seUXMixuodMj93N643XYDouwbBcLIa1JX6Po5n060mg1M/ie4Sumtj9De3tY5Pk/4jdTfuRPPsC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIVkTrE46FKKkKLirgb6BmMGI1UypH23Br/rRMw2gFYxo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dynamisdev
+
+==================================================================
