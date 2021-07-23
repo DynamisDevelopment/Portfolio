@@ -1,28 +1,28 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 // * Styles
-import "./About.sass"
+import './About.sass'
 
 // * Components
-import SectionTitle from "../../components/sectionTitle/SectionTitle"
-import Slider from "react-slick"
-import { videos } from "./data"
-import Video from "../../components/Video/Video"
+import SectionTitle from '../../components/sectionTitle/SectionTitle'
+import Slider from 'react-slick'
+import { videos } from './data'
+import Video from '../../components/Video/Video'
 import { useTrail, animated, config } from 'react-spring'
 import { Waypoint } from 'react-waypoint'
-import Instagram from "./Instagram"
+import Instagram from './Instagram'
 
 const About = () => {
   const [show, toggle] = useState(false)
   const reveal = useTrail(videos.length, {
     to: { opacity: show ? 1 : 0 },
-    config: config.slow
+    config: config.slow,
   })
 
   return (
     <section id="About">
       <div className="about">
-        <SectionTitle title={"About"} subtitle={""} />
+        <SectionTitle title={'About'} subtitle={''} />
         <p>
           I'm also in the process of building my own agency and YouTube channel,
           Dynamis Development, to start having more oportunities to work with
@@ -54,18 +54,32 @@ const About = () => {
         </a>
 
         <div className="mt-12" />
-        <SectionTitle title={"Recent Side Projects"} subtitle={""} />
+        <SectionTitle title={'Recent Side Projects'} subtitle={''} />
 
         <div className="responsive-grid">
-          <iframe className='pen' scrolling="no" width="100%" title="Sine Waves" src="https://codepen.io/dynamisdevelopment/embed/rXpbyq?defaultTab=result&theme-id=dark"></iframe>
-          <iframe className='pen' scrolling="no" width="100%" title="Star Shower" src="https://codepen.io/dynamisdevelopment/embed/BXmvLd?defaultTab=result&theme-id=dark"></iframe>
+          <iframe
+            className="pen"
+            scrolling="no"
+            width="100%"
+            title="Sine Waves"
+            src="https://codepen.io/dynamisdevelopment/embed/rXpbyq?defaultTab=result&theme-id=dark"
+          ></iframe>
+          <iframe
+            className="pen"
+            scrolling="no"
+            width="100%"
+            title="Star Shower"
+            src="https://codepen.io/dynamisdevelopment/embed/BXmvLd?defaultTab=result&theme-id=dark"
+          ></iframe>
         </div>
 
-        <div className="subtitle" style={{ maxWidth: "500px" }}>I have recently taken a interest in building VR games, 3D modelling, and leather working.</div>
+        <div className="subtitle" style={{ maxWidth: '500px' }}>
+          I have recently taken a interest in building VR games and 3D
+          modelling.
+        </div>
         <Instagram />
-
-      </div >
-    </section >
+      </div>
+    </section>
   )
 }
 
@@ -77,17 +91,21 @@ const Reviews = () => {
     autoplay: true,
     speed: 4000,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   }
 
   return (
     <section id="About">
       <div className="reviews">
-        <SectionTitle title={"Reviews"} subtitle={""} />
+        <SectionTitle title={'Reviews'} subtitle={''} />
         <Slider {...settings} className="slider">
           <div>
             <p>
-              "Josh is a talented, internally motivated frontend engineer who exemplifies strong technical thinking and goal oriented execution. It's been really great working with him. Strongly recommended for anyone who's looking for top notch work and a friendly colleague." - Zack Peng (CEO of Kover.ai)
+              "Josh is a talented, internally motivated frontend engineer who
+              exemplifies strong technical thinking and goal oriented execution.
+              It's been really great working with him. Strongly recommended for
+              anyone who's looking for top notch work and a friendly colleague."
+              - Zack Peng (CEO of Kover.ai)
             </p>
           </div>
           <div>
@@ -106,7 +124,11 @@ const Reviews = () => {
           </div>
           <div>
             <p>
-              "Joshua was a pleasure to work with. He dedicated himself fully to each project I sent him & delivered quality results on time, every time. Would definitely recommend Joshua for any task you've got... he has a wide range of skills and would be an asset to any company." - Laura and Jesse (Founders of DropInBlog)
+              "Joshua was a pleasure to work with. He dedicated himself fully to
+              each project I sent him & delivered quality results on time, every
+              time. Would definitely recommend Joshua for any task you've got...
+              he has a wide range of skills and would be an asset to any
+              company." - Laura and Jesse (Founders of DropInBlog)
             </p>
           </div>
           <div>
@@ -131,13 +153,11 @@ const Reviews = () => {
               was great."
             </p>
           </div>
-
         </Slider>
       </div>
     </section>
   )
 }
-
 
 // ""
 export { About, Reviews }
