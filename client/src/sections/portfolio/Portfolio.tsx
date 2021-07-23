@@ -28,9 +28,7 @@ const Portfolio = () => {
     <div className="center" id="Portfolio">
       <SectionTitle
         title={'FrontEnd'}
-        subtitle={
-          "Learning frontend I've done in the past and some that I'm currently working on."
-        }
+        subtitle={'Past frontend projects both professional and for fun.'}
       />
       <div className="responsive-grid">
         {revealFE.map((animation, i) => (
@@ -56,11 +54,9 @@ const Portfolio = () => {
         ))}
       </div>
 
-      <SectionTitle
+      {/* <SectionTitle
         title={'BackEnd'}
-        subtitle={
-          "Learning frontend I've done in the past and some that I'm currently working on."
-        }
+        subtitle={'Some backend flagship projects to flex my skills.'}
         noLine
       />
       <div className="responsive-grid">
@@ -85,7 +81,7 @@ const Portfolio = () => {
             />
           </animated.div>
         ))}
-      </div>
+      </div> */}
 
       {/* <SectionTitle title={'Crypto and Backend'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} noLine />
             <div className="responsive-grid">
