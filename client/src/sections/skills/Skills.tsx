@@ -16,12 +16,12 @@ const skills: Props[] = [
   },
   {
     icon: '../assets/icons/blockchain.svg',
-    title: 'Blockchain',
+    title: 'Blockchain & Defi',
     text: 'With a wide understanding of of crypto from the innerworkings to Dapp development.',
   },
   {
     icon: '../assets/icons/neural-networks.svg',
-    title: 'Neural Networks',
+    title: 'ML & Data Science',
     text: 'Using a TDD approach and best practices I can write clean, maintainable, code from start to finish.',
   },
 ]
