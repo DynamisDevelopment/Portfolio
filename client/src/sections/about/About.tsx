@@ -73,10 +73,6 @@ const About = () => {
           ></iframe>
         </div>
 
-        <div className="subtitle" style={{ maxWidth: '500px' }}>
-          I have recently taken a interest in building VR games, 3D modelling,
-          and leather working.
-        </div>
         <Instagram />
       </div>
     </section>
