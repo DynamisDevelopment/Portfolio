@@ -76,8 +76,8 @@ const Crypto: Props[] = [
     name: 'Uniswap',
   },
   {
-    image: '../assets/icons/cardano-logo.svg',
-    name: 'Cardano',
+    image: '../assets/icons/moralis-logo.svg',
+    name: 'Moralis',
   },
   {
     image: '../assets/icons/chainlink-logo.svg',
