@@ -1,24 +1,24 @@
-import React, { useState } from "react"
-import "./Articles.sass"
-import SectionTitle from "../../components/sectionTitle/SectionTitle"
-import Article from "../../components/Article/Article"
-import { articles } from "./data"
-import { useTrail, animated, config } from "react-spring"
-import { Waypoint } from "react-waypoint"
+import React, { useState } from 'react'
+import './Articles.sass'
+import SectionTitle from '../../components/sectionTitle/SectionTitle'
+import Article from '../../components/Article/Article'
+import { articles } from './data'
+import { useTrail, animated, config } from 'react-spring'
+import { Waypoint } from 'react-waypoint'
 
 const Articles = () => {
   const [show, toggle] = useState(false)
   const reveal = useTrail(articles.length, {
     to: { opacity: show ? 1 : 0 },
-    config: config.slow
+    config: config.slow,
   })
 
   return (
     <div className="bg center" id="Articles">
       <SectionTitle
-        title={"Articles"}
+        title={'Articles'}
         subtitle={
-          "I am currently a consistent long-term technical writer for Alligator.io and DropInBlog"
+          'I was a long-term technical writer for Alligator.io and DropInBlog.'
         }
       />
 
