@@ -10,13 +10,15 @@ const Instagram = () => {
 
   const getPosts = async () => {
     const url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type,caption,timestamp,permalink&access_token=IGQVJVdHlDbjctTHhwYlhlWm9yZAHdsMEZAQQ3RIQUlRcW9WWEFaUUJVR3FpbzNrN0F5NzFpVHBmVjVZAZAVFhRG81NURZARWg2TU00dEQ1dHJHNmp6bmRSRmZAKaUxiTmJjZAExMdXIwSl9R`
-    const res = await axios.get(url)
+    const res = await axios.get(url).catch(err => setPosts([]))
 
-    let filtered
-    if (res && window.innerWidth <= 650) filtered = res.data.data.slice(0, 4)
-    else filtered = res.data.data
+    if (res) {
+      let filtered
+      if (res && window.innerWidth <= 650) filtered = res.data.data.slice(0, 4)
+      else filtered = res.data.data
 
-    setPosts(filtered)
+      setPosts(filtered)
+    }
   }
 
   useEffect(() => getPosts(), [])

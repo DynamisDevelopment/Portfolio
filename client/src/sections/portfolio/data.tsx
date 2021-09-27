@@ -19,6 +19,15 @@ const createLink = (name, link?) =>
 
 export const frontend: Props[] = [
   {
+    image: '../assets/projects/fury.jpg',
+    name: 'Fury Vs Wilder III NFT Ticketing',
+    desc: 'An EthereumMax exclusive NFT ticketing system for the fight Between Tyson Fury and Deontay Wilder. Anyone holding more than 1 Billion EMAX can sign up through Metamask, Coinbase, or Wallet Connect to get exclusive access.',
+    link: 'https://events.ethereummax.org/',
+    tech: ['Next JS', 'Chakra UI', 'TailwindCSS', 'Web3'],
+    complete: true,
+    id: 5,
+  },
+  {
     image: '../assets/projects/kover.jpg',
     name: 'Kover AI',
     desc: `I worked as the lead frontend dev at kover for over a year, creating all the pages, dashboards, and a few side projects. 
@@ -36,7 +45,7 @@ export const frontend: Props[] = [
     link: 'https://gig.kover.ai/',
     tech: ['React', 'Chakra UI', 'Sass'],
     complete: true,
-    id: 1,
+    id: 2,
   },
   {
     image: '../assets/projects/gridwise.jpg',
@@ -45,7 +54,7 @@ export const frontend: Props[] = [
     link: 'https://gridwise.io/protection',
     tech: ['VanillaJS', 'Tailwind CSS'],
     complete: true,
-    id: 2,
+    id: 3,
   },
   {
     image: '../assets/projects/kover-v4.jpg',
@@ -54,7 +63,7 @@ export const frontend: Props[] = [
     link: 'https://vibrant-bose-db8524.netlify.app/',
     tech: ['React', 'Chakra UI', 'Sass'],
     complete: true,
-    id: 3,
+    id: 4,
   },
   {
     image: '../assets/projects/bauwerk.jpg',
@@ -65,7 +74,7 @@ export const frontend: Props[] = [
     designBy: 'itimasthemes',
     tech: ['React', 'Gatsby', 'Contentful'],
     complete: true,
-    id: 4,
+    id: 5,
   },
   {
     image: '../assets/projects/dropInBlog.png',
@@ -76,7 +85,7 @@ export const frontend: Props[] = [
     designBy: 'Myself',
     tech: ['React', 'Gatsby', 'DropInBlog', 'Chakra Ui'],
     complete: true,
-    id: 5,
+    id: 6,
   },
 ]
 

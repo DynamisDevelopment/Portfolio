@@ -35,7 +35,7 @@ const Articles = () => {
               thumb={articles[i].thumb}
               title={articles[i].title}
               desc={articles[i].desc}
-              quote={articles[i].quote}
+              quote={articles[i].quote} 
               link={articles[i].link}
             />
           </animated.div>
