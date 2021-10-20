@@ -40,10 +40,10 @@ const Instagram = () => {
     <Suspense fallback={<div />}>
       {posts && (
         <React.Fragment>
-          <div className="subtitle" style={{ maxWidth: '500px' }}>
+          {/* <div className="subtitle" style={{ maxWidth: '500px' }}>
             I have recently taken a interest in building VR games, 3D modelling,
             and leather working.
-          </div>
+          </div> */}
           <div className="ig-posts">
             <div className="ig-grid">
               {posts.map((post, i) => (

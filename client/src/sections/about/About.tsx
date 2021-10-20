@@ -73,7 +73,7 @@ const About = () => {
           ></iframe>
         </div>
 
-        <Instagram />
+        {/* <Instagram /> */}
       </div>
     </section>
   )
