@@ -25,9 +25,9 @@ const About = () => {
         <SectionTitle title={'About'} subtitle={''} />
         <p>
           I'm also in the process of building my own agency and YouTube channel,
-          Dynamis Development, to start having more oportunities to work with
-          other great developers and designers on more interesting projects
-          while helping other build their skills.
+          Dynamis Development, to have more opportunities to work with other
+          great developers and designers on more interesting projects while
+          helping others build their skills.
         </p>
         <div className="responsive-grid">
           {reveal.map((animation, i) => (
