@@ -10,7 +10,8 @@ import { videos } from './data'
 import Video from '../../components/Video/Video'
 import { useTrail, animated, config } from 'react-spring'
 import { Waypoint } from 'react-waypoint'
-import Instagram from './Instagram'
+// import Instagram from './Instagram'
+
 
 const About = () => {
   const [show, toggle] = useState(false)
@@ -25,9 +26,9 @@ const About = () => {
         <SectionTitle title={'About'} subtitle={''} />
         <p>
           I'm also in the process of building my own agency and YouTube channel,
-          Dynamis Development, to start having more oportunities to work with
-          other great developers and designers on more interesting projects
-          while helping other build their skills.
+          Dynamis Development, to have more opportunities to work with other
+          great developers and designers on more interesting projects while
+          helping others build their skills.
         </p>
         <div className="responsive-grid">
           {reveal.map((animation, i) => (
@@ -54,7 +55,8 @@ const About = () => {
         </a>
 
         <div className="mt-12" />
-        <SectionTitle title={'Recent Side Projects'} subtitle={''} />
+        <SectionTitle title={'Recent Pens'} subtitle={''} />
+
 
         <div className="responsive-grid">
           <iframe

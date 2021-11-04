@@ -54,51 +54,54 @@ const Portfolio = () => {
         ))}
       </div>
 
-      {/* <SectionTitle
-        title={'BackEnd'}
-        subtitle={'Some backend flagship projects to flex my skills.'}
+      {/* <SectionTitle title={'BackEnd'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} noLine />
+            <div className="responsive-grid">
+                {revealBE.map((animation, i) => <animated.div style={animation} key={i}>
+                    <Waypoint onEnter={() => { if (!showBE) toggleBE(true) }} bottomOffset='30%' />
+                    <Project
+                        image={backend[i].image}
+                        name={backend[i].name}
+                        desc={backend[i].desc}
+                        link={backend[i].link}
+                        git={backend[i].git}
+                        tech={backend[i].tech}
+                        designBy={backend[i].designBy}
+                        complete={backend[i].complete}
+                        id={i} />
+                </animated.div>)}
+            </div> */}
+
+      <SectionTitle
+        title={'Crypto and Backend'}
+        subtitle={
+          "To keep work challenging I've been transitioning more towards backend and blockchain work."
+        }
         noLine
       />
       <div className="responsive-grid">
-        {revealBE.map((animation, i) => (
+        {revealDE.map((animation, i) => (
           <animated.div style={animation} key={i}>
             <Waypoint
               onEnter={() => {
-                if (!showBE) toggleBE(true)
+                if (!showDE) toggleDE(true)
               }}
               bottomOffset="30%"
             />
             <Project
-              image={backend[i].image}
-              name={backend[i].name}
-              desc={backend[i].desc}
-              link={backend[i].link}
-              git={backend[i].git}
-              tech={backend[i].tech}
-              designBy={backend[i].designBy}
-              complete={backend[i].complete}
+              image={defi[i].image}
+              name={defi[i].name}
+              desc={defi[i].desc}
+              link={defi[i].link}
+              git={defi[i].git}
+              tech={defi[i].tech}
+              designBy={defi[i].designBy}
+              complete={defi[i].complete}
               id={i}
             />
           </animated.div>
         ))}
-      </div> */}
+      </div>
 
-      {/* <SectionTitle title={'Crypto and Backend'} subtitle={'Learning frontend I\'ve done in the past and some that I\'m currently working on.'} noLine />
-            <div className="responsive-grid">
-                {revealDE.map((animation, i) => <animated.div style={animation} key={i}>
-                    <Waypoint onEnter={() => { if (!showDE) toggleDE(true) }} bottomOffset='30%' />
-                    <Project
-                        image={defi[i].image}
-                        name={defi[i].name}
-                        desc={defi[i].desc}
-                        link={defi[i].link}
-                        git={defi[i].git}
-                        tech={defi[i].tech}
-                        designBy={defi[i].designBy}
-                        complete={defi[i].complete}
-                        id={i} />
-                </animated.div>)}
-            </div> */}
     </div>
   )
 }

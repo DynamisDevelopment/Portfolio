@@ -10,6 +10,7 @@ const Instagram = () => {
 
   const getPosts = async () => {
     const url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type,caption,timestamp,permalink&access_token=IGQVJVdHlDbjctTHhwYlhlWm9yZAHdsMEZAQQ3RIQUlRcW9WWEFaUUJVR3FpbzNrN0F5NzFpVHBmVjVZAZAVFhRG81NURZARWg2TU00dEQ1dHJHNmp6bmRSRmZAKaUxiTmJjZAExMdXIwSl9R`
+
     const res = await axios.get(url).catch(err => setPosts([]))
 
     if (res) {
@@ -40,10 +41,11 @@ const Instagram = () => {
     <Suspense fallback={<div />}>
       {posts && (
         <React.Fragment>
-          {/* <div className="subtitle" style={{ maxWidth: '500px' }}>
+          <div className="subtitle" style={{ maxWidth: '500px' }}>
             I have recently taken a interest in building VR games, 3D modelling,
             and leather working.
-          </div> */}
+          </div>
+
           <div className="ig-posts">
             <div className="ig-grid">
               {posts.map((post, i) => (
