@@ -18,7 +18,7 @@ const Articles = () => {
       <SectionTitle
         title={'Articles'}
         subtitle={
-          'I was a consistent long-term technical writer for Alligator.io and DropInBlog'
+          'I was a long-term technical writer for Alligator.io and DropInBlog.'
         }
       />
 
@@ -35,7 +35,7 @@ const Articles = () => {
               thumb={articles[i].thumb}
               title={articles[i].title}
               desc={articles[i].desc}
-              quote={articles[i].quote}
+              quote={articles[i].quote} 
               link={articles[i].link}
             />
           </animated.div>

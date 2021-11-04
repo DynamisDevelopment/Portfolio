@@ -86,6 +86,7 @@ export const frontend: Props[] = [
     tech: ['React', 'Gatsby', 'DropInBlog', 'Chakra Ui'],
     complete: true,
     id: 5,
+
   },
 ]
 

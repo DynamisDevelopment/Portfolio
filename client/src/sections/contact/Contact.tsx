@@ -98,12 +98,7 @@ const FormikForm = withFormik({
     email: Yup.string()
       .email('Please use a valid email')
       .required('An email is required'),
-    message: Yup.string()
-      .min(
-        25,
-        'Message must be more than 25 characters long, be descriptive :)'
-      )
-      .required('A message is required'),
+    message: Yup.string().required('A message is required'),
   }),
   handleSubmit(values, { resetForm }) {
     axios({

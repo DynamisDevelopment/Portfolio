@@ -12,17 +12,17 @@ const skills: Props[] = [
   {
     icon: '../assets/icons/backend.svg',
     title: 'Back End & DevOps',
-    text: 'Whether it be routing, architecture, or database management I can work with large teams to figure out almost anything.',
+    text: 'Whether it be routing, architecture, or database management I can work with large teams to create almost anything.',
   },
   {
     icon: '../assets/icons/blockchain.svg',
     title: 'Blockchain & Defi',
-    text: 'With a wide understanding of of crypto from the innerworkings to Dapp development.',
+    text: 'Everything from writing upgradable smart contracts, deploying across multiple blockchains, and integration.',
   },
   {
     icon: '../assets/icons/testing.svg',
     title: 'Test Driven Development',
-    text: 'Using a TDD approach and best practices I can write clean, maintainable, code from start to finish.',
+    text: 'Using a TDD approach and best practices I can write clean, maintainable, and reliable code from start to finish.',
   },
 ]
 
