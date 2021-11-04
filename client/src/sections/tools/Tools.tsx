@@ -84,8 +84,8 @@ const Crypto: Props[] = [
     name: 'Chainlink',
   },
   {
-    image: '../assets/icons/polkadot-logo.svg',
-    name: 'Polkadot',
+    image: '../assets/icons/polygon-logo.svg',
+    name: 'Polygon',
   },
 ]
 

@@ -20,8 +20,8 @@ const skills: Props[] = [
     text: 'With a wide understanding of of crypto from the innerworkings to Dapp development.',
   },
   {
-    icon: '../assets/icons/neural-networks.svg',
-    title: 'ML & Data Science',
+    icon: '../assets/icons/testing.svg',
+    title: 'Test Driven Development',
     text: 'Using a TDD approach and best practices I can write clean, maintainable, code from start to finish.',
   },
 ]
