@@ -65,6 +65,7 @@ const Project = (props: Props) => {
           color="white"
           minH="500px"
           style={{ borderRadius: '10px' }}
+          backgroundColor="#2D3748"
         >
           <ModalHeader fontSize={'3xl'}> {props.name} </ModalHeader>
           <ModalCloseButton
