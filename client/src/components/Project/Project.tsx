@@ -76,6 +76,8 @@ const Project = (props: Props) => {
           <ModalBody
             fontSize={'1.25em'}
             dangerouslySetInnerHTML={{ __html: props.desc }}
+            // @ts-ignore
+            zIndex="999"
           ></ModalBody>
 
           <ModalFooter className="more-links">
