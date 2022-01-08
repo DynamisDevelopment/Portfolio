@@ -86,7 +86,6 @@ export const frontend: Props[] = [
     tech: ['React', 'Gatsby', 'DropInBlog', 'Chakra Ui'],
     complete: true,
     id: 5,
-
   },
 ]
 
@@ -117,25 +116,25 @@ export const backend: Props[] = [
 
 export const defi: Props[] = [
   {
-    image: '../assets/projects/axos.jpg',
-    name: 'EMAX NFT Marketplace',
-    desc: 'Blog and portfolio site for a German architectural and interior design company.',
-    // link: 'https://bauwerk.netlify.com/',
-    tech: ['Solidity', 'Polygon', 'The Graph', 'Node', 'MongoDB'],
-    complete: false,
-    id: 2,
-  },
-  {
-    image: '../assets/projects/dao.jpg',
-    name: 'EMAX DAO',
-    desc: 'Blog and portfolio site for a German architectural and interior design company.',
-    // link: 'https://bauwerk.netlify.com/',
-    tech: ['React', 'Tailwind CSS', 'Solidity', 'The Graph'],
-    complete: false,
-    id: 2,
-  },
-  {
     image: '../assets/projects/marketplace.jpg',
+    name: 'EMAX NFT Marketplace',
+    desc: 'A full-stack, multi-blockchain Opensea competitor based on the EMAX token ecosystem.',
+    link: 'https://www.nftmax.io/',
+    tech: ['Solidity', 'NextJS', 'The Graph', 'Node', 'MongoDB'],
+    complete: true,
+    id: 1,
+  },
+  {
+    image: '../assets/projects/memoir.jpg',
+    name: 'Memoir',
+    desc: "A full-stack social application where families can ask the're grandparents questions and talk about their video responses.",
+    link: 'https://memoir-dev.onrender.com/',
+    tech: ['BlitzJS', 'NextJS', 'Prisma', 'PostgreSQL', 'AWS S3'],
+    complete: true,
+    id: 2,
+  },
+  {
+    image: '../assets/projects/axos.jpg',
     name: 'EMAX NFT Marketplace',
     desc: 'Blog and portfolio site for a German architectural and interior design company.',
     // link: 'https://bauwerk.netlify.com/',
@@ -143,4 +142,13 @@ export const defi: Props[] = [
     complete: false,
     id: 3,
   },
+  // {
+  //   image: '../assets/projects/dao.jpg',
+  //   name: 'EMAX DAO',
+  //   desc: 'Blog and portfolio site for a German architectural and interior design company.',
+  //   // link: 'https://bauwerk.netlify.com/',
+  //   tech: ['React', 'Tailwind CSS', 'Solidity', 'The Graph'],
+  //   complete: false,
+  //   id: 2,
+  // },
 ]
