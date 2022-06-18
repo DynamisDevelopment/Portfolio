@@ -12,7 +12,6 @@ import { useTrail, animated, config } from 'react-spring'
 import { Waypoint } from 'react-waypoint'
 // import Instagram from './Instagram'
 
-
 const About = () => {
   const [show, toggle] = useState(false)
   const reveal = useTrail(videos.length, {
@@ -56,7 +55,6 @@ const About = () => {
 
         <div className="mt-12" />
         <SectionTitle title={'Recent Pens'} subtitle={''} />
-
 
         <div className="responsive-grid">
           <iframe
@@ -113,6 +111,13 @@ const Reviews = () => {
               highly recommend!" - Sebastian Noel (Founder of Alligator.io 🐊)
             </p>
           </div>
+          <div>
+            <p>
+              "Great react/javascript developer, super fast turnarounds" - Ian
+              Hunter (Founder of Mintdrop)
+            </p>
+          </div>
+
           <div>
             <p>
               "Joshua was flexible, took initiative, and was technically
