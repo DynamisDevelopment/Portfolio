@@ -50,6 +50,7 @@ export const frontend: Props[] = [
     name: 'Mintdrop',
     desc: "A publishing platform for creators to mint NFT's and host airdrops for their supporters.",
     tech: ['Solidity', 'Polygon', 'The Graph', 'Node', 'MongoDB'],
+    link: 'https://mintdrop-archive.netlify.app/',
     complete: true,
     id: 3,
   },
