@@ -16,7 +16,7 @@
     @extend .shadow-2xl
     .row
         // Layout
-        width: 100vw
+        width: 100%
         justify-content: space-between
         align-items: center
         @extend .sm-flex, .md-absolute
@@ -30,8 +30,9 @@
             // Layout
             height: 40px  
             width: 40px
-            @extend .md-hidden 
             @extend .sm-mr-8
+            @media screen and (min-width: 950px)
+                display: none
 
             // Misc Styling
             cursor: pointer
