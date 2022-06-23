@@ -39,7 +39,7 @@ export const frontend: Props[] = [
   {
     image: '../assets/projects/memoir.jpg',
     name: 'Memoir',
-    desc: "A full-stack social application where families can ask the're grandparents questions and talk about their video responses.",
+    desc: 'A full-stack social application where families can ask their grandparents questions and talk about their video responses.',
     link: 'https://memoir-dev.onrender.com/',
     tech: ['BlitzJS', 'NextJS', 'Prisma', 'PostgreSQL', 'AWS S3'],
     complete: true,
