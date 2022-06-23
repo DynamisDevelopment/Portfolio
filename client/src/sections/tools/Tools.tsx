@@ -2,6 +2,7 @@ import React from 'react'
 import './Tools.sass'
 import SectionTitle from '../../components/sectionTitle/SectionTitle'
 import Tool from '../../components/Tool/Tool'
+import { ChevronDownIcon } from '@chakra-ui/icons'
 
 export interface Props {
   image: string

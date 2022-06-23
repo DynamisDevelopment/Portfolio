@@ -80,7 +80,7 @@ const Navbar = ({ show, isMobile }: any) => {
         ))}
         <animated.li onClick={() => toggle(!mobile)}>
           {' '}
-          <a href={'../assets/resume.pdf'} download>
+          <a href={'../assets/resume.pdf'}>
             <Button
               onClick={() => {}}
               bg={show || mobile ? '#6628D5' : '#fff'}
