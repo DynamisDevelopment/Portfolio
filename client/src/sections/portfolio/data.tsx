@@ -21,7 +21,7 @@ export const frontend: Props[] = [
   {
     image: '../assets/projects/fury.jpg',
     name: 'Fury Vs Wilder III NFT Ticketing',
-    desc: 'An EthereumMax exclusive NFT ticketing system for the fight Between Tyson Fury and Deontay Wilder. Anyone holding more than 1 Billion EMAX can sign up through Metamask, Coinbase, or Wallet Connect to get exclusive access.',
+    desc: 'An EthereumMax exclusive NFT ticketing system for the fight between Tyson Fury and Deontay Wilder. Anyone holding more than 1 Billion EMAX can sign up through Metamask, Coinbase, or Wallet Connect to get exclusive access.',
     link: 'https://events.ethereummax.org/',
     tech: ['Next JS', 'Chakra UI', 'TailwindCSS', 'Web3'],
     complete: true,
